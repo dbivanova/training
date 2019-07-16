@@ -1,0 +1,1020 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I have an existing account with an online bookshop",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I log into the website",
+            "match": {},
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Choose a product from random category",
+        "description": "",
+        "id": "online-bookshop;choose-a-product-from-random-category",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I extend the Категории menu",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "I choose random book category",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "I choose a book from the list",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "The book description will be loaded with price and an option to order",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I have an existing account with an online bookshop",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I log into the website",
+            "match": {},
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Search for a product",
+        "description": "",
+        "id": "online-bookshop;search-for-a-product",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I search for a specific book",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "I will be able to select the book from the search results",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "The book description will be loaded with price and an option to order",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I have an existing account with an online bookshop",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I log into the website",
+            "match": {},
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Add a book to the basket",
+        "description": "",
+        "id": "online-bookshop;add-a-book-to-the-basket",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "I search and load a specific book",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "I click on the Add tp basket option",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "The book will be added to the basket",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I have an existing account with an online bookshop",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I log into the website",
+            "match": {},
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Edit the basket",
+        "description": "",
+        "id": "online-bookshop;edit-the-basket",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I add a book to the basket",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26,
+            "name": "I load the added products",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "I will be able to increase the quantity",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "I will be able to remove the products from the basket",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Online Bookshop",
+    "description": "I want to create test scenarios about online bookshop operations",
+    "id": "online-bookshop",
+    "keyword": "Feature",
+    "uri": "OnlineShop.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Find bank branches in Germany using BLZ codes",
+        "description": "",
+        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 89101927,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay(SOAPStepDefs.java:13)\r\n\tat ✽.Given I want to search for specific bank branches in Germay(SOAPService.feature:4)\r\n",
+              "status": "pending"
+            },
+            "line": 4,
+            "name": "I want to search for specific bank branches in Germay",
+            "match": {
+              "location": "SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I run a SOAP request using code 31460290",
+            "match": {
+              "arguments": [
+                {
+                  "val": "31460290",
+                  "offset": 32
+                }
+              ],
+              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I verify the location Viersen",
+            "match": {
+              "location": "SOAPStepDefs.i_verify_the_location_Viersen()"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Find bank branches in Germany using BLZ codes",
+        "description": "",
+        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 270409,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay(SOAPStepDefs.java:13)\r\n\tat ✽.Given I want to search for specific bank branches in Germay(SOAPService.feature:4)\r\n",
+              "status": "pending"
+            },
+            "line": 4,
+            "name": "I want to search for specific bank branches in Germay",
+            "match": {
+              "location": "SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I run a SOAP request using code 31061108",
+            "match": {
+              "arguments": [
+                {
+                  "val": "31061108",
+                  "offset": 32
+                }
+              ],
+              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I verify the location Willich",
+            "match": {
+              "location": "SOAPStepDefs.i_verify_the_location_Willich()"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Find bank branches in Germany using BLZ codes",
+        "description": "",
+        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 213564,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay(SOAPStepDefs.java:13)\r\n\tat ✽.Given I want to search for specific bank branches in Germay(SOAPService.feature:4)\r\n",
+              "status": "pending"
+            },
+            "line": 4,
+            "name": "I want to search for specific bank branches in Germay",
+            "match": {
+              "location": "SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I run a SOAP request using code 31261282",
+            "match": {
+              "arguments": [
+                {
+                  "val": "31261282",
+                  "offset": 32
+                }
+              ],
+              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I verify the location Erkelenz",
+            "match": {
+              "location": "SOAPStepDefs.i_verify_the_location_Erkelenz()"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Find bank branches in Germany using BLZ codes",
+        "description": "",
+        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 179220,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay(SOAPStepDefs.java:13)\r\n\tat ✽.Given I want to search for specific bank branches in Germay(SOAPService.feature:4)\r\n",
+              "status": "pending"
+            },
+            "line": 4,
+            "name": "I want to search for specific bank branches in Germay",
+            "match": {
+              "location": "SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I run a SOAP request using code 34270094",
+            "match": {
+              "arguments": [
+                {
+                  "val": "34270094",
+                  "offset": 32
+                }
+              ],
+              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I verify the location Solingen",
+            "match": {
+              "location": "SOAPStepDefs.i_verify_the_location_Solingen()"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Find bank names using BLZ codes",
+        "description": "",
+        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 182773,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay(SOAPStepDefs.java:49)\r\n\tat ✽.Given I want to search for bank names in Germay(SOAPService.feature:17)\r\n",
+              "status": "pending"
+            },
+            "line": 17,
+            "name": "I want to search for bank names in Germay",
+            "match": {
+              "location": "SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I run a SOAP request using code 43020000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "43020000",
+                  "offset": 32
+                }
+              ],
+              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I verify the bank name Westfalenbank",
+            "match": {
+              "location": "SOAPStepDefs.i_verify_the_bank_name_Westfalenbank()"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Find bank names using BLZ codes",
+        "description": "",
+        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 182772,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay(SOAPStepDefs.java:49)\r\n\tat ✽.Given I want to search for bank names in Germay(SOAPService.feature:17)\r\n",
+              "status": "pending"
+            },
+            "line": 17,
+            "name": "I want to search for bank names in Germay",
+            "match": {
+              "location": "SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I run a SOAP request using code 43000000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "43000000",
+                  "offset": 32
+                }
+              ],
+              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I verify the bank name Bundesbank",
+            "match": {
+              "location": "SOAPStepDefs.i_verify_the_bank_name_Bundesbank()"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Find bank names using BLZ codes",
+        "description": "",
+        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 172114,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay(SOAPStepDefs.java:49)\r\n\tat ✽.Given I want to search for bank names in Germay(SOAPService.feature:17)\r\n",
+              "status": "pending"
+            },
+            "line": 17,
+            "name": "I want to search for bank names in Germay",
+            "match": {
+              "location": "SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I run a SOAP request using code 43060129",
+            "match": {
+              "arguments": [
+                {
+                  "val": "43060129",
+                  "offset": 32
+                }
+              ],
+              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I verify the bank name Volksbank Bochum Witten",
+            "match": {
+              "location": "SOAPStepDefs.i_verify_the_bank_name_Volksbank_Bochum_Witten()"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Find bank names using BLZ codes",
+        "description": "",
+        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 164219,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay(SOAPStepDefs.java:49)\r\n\tat ✽.Given I want to search for bank names in Germay(SOAPService.feature:17)\r\n",
+              "status": "pending"
+            },
+            "line": 17,
+            "name": "I want to search for bank names in Germay",
+            "match": {
+              "location": "SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I run a SOAP request using code 43080083",
+            "match": {
+              "arguments": [
+                {
+                  "val": "43080083",
+                  "offset": 32
+                }
+              ],
+              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I verify the bank name Dresdner Bank",
+            "match": {
+              "location": "SOAPStepDefs.i_verify_the_bank_name_Dresdner_Bank()"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Bank branches search based on a BLZ codes",
+    "description": "",
+    "id": "bank-branches-search-based-on-a-blz-codes",
+    "keyword": "Feature",
+    "uri": "SOAPService.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Register new user in WordPress",
+        "description": "",
+        "id": "user-registration;register-new-user-in-wordpress",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4824727,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I want to create new user profile",
+            "match": {
+              "location": "UserRegStepDefs.generateUsernamePassword()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8309394441,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill out the form and click on the Create Account button",
+            "match": {
+              "location": "UserRegStepDefs.enterNewRegData()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10576803253,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "My account is created and I\u0027m able to log into WordPress with that account",
+            "match": {
+              "location": "UserRegStepDefs.accountCreatedSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Login attempt with invalid credentials",
+        "description": "",
+        "id": "user-registration;login-attempt-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 60004,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I want to validate error message from WordPress",
+            "match": {
+              "location": "UserRegStepDefs.generateCredentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6380085268,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter invalid credentials and click on Login",
+            "match": {
+              "location": "UserRegStepDefs.enterInvalidUsername()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6900793858,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I won\u0027t be logged in",
+            "match": {
+              "location": "UserRegStepDefs.loginFailed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User Registration",
+    "description": "\nI want to register new user in WordPress.",
+    "id": "user-registration",
+    "keyword": "Feature",
+    "uri": "UserRegistration.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Create an entry in the DB",
+        "description": "",
+        "id": "test-rest-api-calls;create-an-entry-in-the-db",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1942716327,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I want to create new employee entry in the DB",
+            "match": {
+              "location": "RestApiStepsDef.setUp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1068289120,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I send my json to the POST endpoint",
+            "match": {
+              "location": "RestApiStepsDef.postJson()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2154982,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I will see response 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 20
+                }
+              ],
+              "location": "RestApiStepsDef.validateResponse(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27633,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The response body will contain new employee ID",
+            "match": {
+              "location": "RestApiStepsDef.addedEntry()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Retrieve information from the DB",
+        "description": "",
+        "id": "test-rest-api-calls;retrieve-information-from-the-db",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 88820,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "An employee entry exists in the DB",
+            "match": {
+              "location": "RestApiStepsDef.dbQuerySetUp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 481620086,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I perform GET API call using the employee ID",
+            "match": {
+              "location": "RestApiStepsDef.getEmployee()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 518213327,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The API call will return the employee name",
+            "match": {
+              "location": "RestApiStepsDef.retrieveInformation()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Delete an entry",
+        "description": "",
+        "id": "test-rest-api-calls;delete-an-entry",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 31581,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "An employee entry exists in the DB",
+            "match": {
+              "location": "RestApiStepsDef.dbQuerySetUp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 466955235,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I perform DELETE API call using the employee ID",
+            "match": {
+              "location": "RestApiStepsDef.deleteEmployee()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 462991079,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user will no longer exist",
+            "match": {
+              "location": "RestApiStepsDef.validateDeletedEntry()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test REST API calls",
+    "description": "\r\nI want to execute API calls to create and retrieve information",
+    "id": "test-rest-api-calls",
+    "keyword": "Feature",
+    "uri": "restAPI.feature"
+  }
+]

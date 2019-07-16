@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="8" tests="8" time="0">
+<testcase classname="Bank branches search based on a BLZ codes" name="Find bank branches in Germany using BLZ codes" time="0">
+<skipped><![CDATA[Given I want to search for specific bank branches in Germay.................undefined
+When I run a SOAP request using code 31460290...............................undefined
+Then I verify the location Viersen in step..................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Bank branches search based on a BLZ codes" name="Find bank branches in Germany using BLZ codes 2" time="0">
+<skipped><![CDATA[Given I want to search for specific bank branches in Germay.................undefined
+When I run a SOAP request using code 31061108...............................undefined
+Then I verify the location Willich in step..................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Bank branches search based on a BLZ codes" name="Find bank branches in Germany using BLZ codes 3" time="0">
+<skipped><![CDATA[Given I want to search for specific bank branches in Germay.................undefined
+When I run a SOAP request using code 31261282...............................undefined
+Then I verify the location Erkelenz in step.................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Bank branches search based on a BLZ codes" name="Find bank branches in Germany using BLZ codes 4" time="0">
+<skipped><![CDATA[Given I want to search for specific bank branches in Germay.................undefined
+When I run a SOAP request using code 34270094...............................undefined
+Then I verify the location Solingen in step.................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Bank branches search based on a BLZ codes" name="Find bank names using BLZ codes" time="0">
+<skipped><![CDATA[Given I want to search for bank names in Germay.............................undefined
+When I run a SOAP request using code 43020000...............................undefined
+Then I verify the bank name Westfalenbank in step...........................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Bank branches search based on a BLZ codes" name="Find bank names using BLZ codes 2" time="0">
+<skipped><![CDATA[Given I want to search for bank names in Germay.............................undefined
+When I run a SOAP request using code 43000000...............................undefined
+Then I verify the bank name Bundesbank in step..............................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Bank branches search based on a BLZ codes" name="Find bank names using BLZ codes 3" time="0">
+<skipped><![CDATA[Given I want to search for bank names in Germay.............................undefined
+When I run a SOAP request using code 43060129...............................undefined
+Then I verify the bank name Volksbank Bochum Witten in step.................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Bank branches search based on a BLZ codes" name="Find bank names using BLZ codes 4" time="0">
+<skipped><![CDATA[Given I want to search for bank names in Germay.............................undefined
+When I run a SOAP request using code 43080083...............................undefined
+Then I verify the bank name Dresdner Bank in step...........................undefined
+]]></skipped>
+</testcase>
+</testsuite>

@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="91" failures="0" name="com.examples.test.training.runner.TestRunner" time="0.76" errors="0" skipped="58">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="JOB_NAME" value="Training Examples"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="NUMBER_OF_PROCESSORS" value="4"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="JENKINS_HOME" value="C:\Program Files (x86)\Jenkins"/>
+    <property name="HUDSON_SERVER_COOKIE" value="ebc02f3302a47ca7"/>
+    <property name="POM_ARTIFACTID" value="restAPIproject"/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\resources.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\rt.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\jsse.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\jce.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\charsets.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\jfr.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\classes"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
+    <property name="user.country.format" value="BG"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="restAPIproject"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="TEMP" value="C:\Windows\TEMP"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
+    <property name="WINSW_SERVICE_ID" value="Jenkins"/>
+    <property name="user.name" value="TOSHIBA$"/>
+    <property name="user.language.format" value="bg"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
+    <property name="ProgramFiles" value="C:\Program Files (x86)"/>
+    <property name="user.language" value="en"/>
+    <property name="JOB_BASE_NAME" value="Training Examples"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/Training%20Examples/16/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#16"/>
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\bin"/>
+    <property name="LOCALAPPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Local"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="PROCESSOR_LEVEL" value="6"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="USERNAME" value="TOSHIBA$"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="PROCESSOR_ARCHITEW6432" value="AMD64"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\endorsed"/>
+    <property name="BUILD_ID" value="16"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="maven.conf" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1\conf"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="GB"/>
+    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
+    <property name="java.home" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="os.version" value="6.3"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/Training%20Examples/16/display/redirect"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
+    <property name="TMP" value="C:\Windows\TEMP"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="25.211-b12"/>
+    <property name="user.variant" value=""/>
+    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/job/Training%20Examples/display/redirect"/>
+    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="FP_NO_HOST_CHECK" value="NO"/>
+    <property name="JAVA_HOME" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="CommonProgramFiles" value="C:\Program Files (x86)\Common Files"/>
+    <property name="ComSpec" value="C:\Windows\system32\cmd.exe"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="user.script" value=""/>
+    <property name="SERVICE_ID" value="Jenkins"/>
+    <property name="COMPUTERNAME" value="TOSHIBA"/>
+    <property name="POM_GROUPID" value="com.examples.test"/>
+    <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
+    <property name="user.home" value="C:\Windows\system32\config\systemprofile"/>
+    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="BUILD_TAG" value="jenkins-Training Examples-16"/>
+    <property name="JENKINS_SERVER_COOKIE" value="ebc02f3302a47ca7"/>
+    <property name="HUDSON_URL" value="http://localhost:8080/"/>
+    <property name="ProgramData" value="C:\ProgramData"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="USERPROFILE" value="C:\Windows\system32\config\systemprofile"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1/bin;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK/bin;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Users\estafet_2\apache-maven-3.6.1\apache-maven-3.6.1\bin;C:\Users\estafet_2\workspace\geckodriver;C:\Users\estafet_2\workspace\chromedriver_win32;;."/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="APPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Roaming"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1"/>
+    <property name="java.class.path" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1\boot\plexus-classworlds-2.6.0.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1 C:\Program Files (x86)\Jenkins\war\WEB-INF\lib\remoting-3.33.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 51560"/>
+    <property name="Path" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Users\estafet_2\apache-maven-3.6.1\apache-maven-3.6.1\bin;C:\Users\estafet_2\workspace\geckodriver;C:\Users\estafet_2\workspace\chromedriver_win32;"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PROCESSOR_ARCHITECTURE" value="x86"/>
+    <property name="PATH+JDK" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK/bin"/>
+    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 69 Stepping 1, GenuineIntel"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1"/>
+    <property name="java.io.tmpdir" value="C:\Windows\TEMP\"/>
+    <property name="OS" value="Windows_NT"/>
+    <property name="HUDSON_HOME" value="C:\Program Files (x86)\Jenkins"/>
+    <property name="PATH+MAVEN" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1/bin"/>
+    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/Training%20Examples/16/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="x86"/>
+    <property name="SystemRoot" value="C:\Windows"/>
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="user.dir" value="C:\Users\estafet_2\workspace\training"/>
+    <property name="JOB_URL" value="http://localhost:8080/job/Training%20Examples/"/>
+    <property name="USERDOMAIN" value="WORKGROUP"/>
+    <property name="line.separator" value="
+"/>
+    <property name="MAVEN_HOME" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="BUILD_NUMBER" value="16"/>
+    <property name="BASE" value="C:\Program Files (x86)\Jenkins"/>
+    <property name="JENKINS_URL" value="http://localhost:8080/"/>
+    <property name="PROCESSOR_REVISION" value="4501"/>
+    <property name="ProgramW6432" value="C:\Program Files"/>
+    <property name="windir" value="C:\Windows"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="SystemDrive" value="C:"/>
+    <property name="maven3.interceptor" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar"/>
+    <property name="WORKSPACE" value="C:\Program Files (x86)\Jenkins\workspace\Training Examples"/>
+    <property name="VLC_PLUGIN_PATH" value="C:\Program Files (x86)\ArenaPLAY\node_modules\wcjs-prebuilt\bin"/>
+    <property name="maven3.interceptor.common" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar"/>
+    <property name="WINSW_EXECUTABLE" value="C:\Program Files (x86)\Jenkins\jenkins.exe"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"/>
+  </properties>
+  <testcase classname="Scenario: Choose a product from random category" name="Given I have an existing account with an online bookshop" time="0.005">
+    <skipped/>
+    <system-out>Expected only one instance, but found too many: [cucumber.runtime.java.guice.impl.GuiceFactory@f9390f, cucumber.runtime.java.picocontainer.PicoFactory@1392934]
+More than one Cucumber ObjectFactory was found in the classpath
+
+You probably may have included, for instance, cucumber-spring AND cucumber-guice as part of
+your dependencies. When this happens, Cucumber falls back to instantiating the
+DefaultJavaObjectFactory implementation which doesn&apos;t provide IoC.
+In order to enjoy IoC features, please remove the unnecessary dependencies from your classpath.
+
+Feature: Online Bookshop
+  I want to create test scenarios about online bookshop operations
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: Choose a product from random category" name="When I log into the website" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Choose a product from random category" name="And I extend the Категории menu" time="0.01">
+    <skipped/>
+    <system-out>
+  Background:                                                &amp;#27;[90m# OnlineShop.feature:4&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33mI have an existing account with an online bookshop&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mI log into the website&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: Choose a product from random category" name="And I choose random book category" time="0.011">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Choose a product from random category" name="And I choose a book from the list" time="0.011">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Choose a product from random category" name="Then The book description will be loaded with price and an option to order" time="0.012">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Choose a product from random category" name="Scenario: Choose a product from random category" time="0.013">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Choose a product from random category" name="Scenario: Choose a product from random category" time="0.013"/>
+  <testcase classname="Scenario: Search for a product" name="Given I have an existing account with an online bookshop" time="0.002">
+    <skipped/>
+    <system-out>
+  Scenario: Choose a product from random category                              &amp;#27;[90m# OnlineShop.feature:8&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI extend the Категории menu&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI choose random book category&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI choose a book from the list&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mThe book description will be loaded with price and an option to order&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: Search for a product" name="When I log into the website" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Search for a product" name="And I search for a specific book" time="0.004">
+    <skipped/>
+    <system-out>
+  Background:                                                &amp;#27;[90m# OnlineShop.feature:4&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33mI have an existing account with an online bookshop&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mI log into the website&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: Search for a product" name="Then I will be able to select the book from the search results" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Search for a product" name="And The book description will be loaded with price and an option to order" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Search for a product" name="Scenario: Search for a product" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Search for a product" name="Scenario: Search for a product" time="0.006"/>
+  <testcase classname="Scenario: Add a book to the basket" name="Given I have an existing account with an online bookshop" time="0.001">
+    <skipped/>
+    <system-out>
+  Scenario: Search for a product                                              &amp;#27;[90m# OnlineShop.feature:14&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI search for a specific book&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mI will be able to select the book from the search results&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mThe book description will be loaded with price and an option to order&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: Add a book to the basket" name="When I log into the website" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Add a book to the basket" name="And I search and load a specific book" time="0.004">
+    <skipped/>
+    <system-out>
+  Background:                                                &amp;#27;[90m# OnlineShop.feature:4&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33mI have an existing account with an online bookshop&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mI log into the website&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: Add a book to the basket" name="And I click on the Add tp basket option" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Add a book to the basket" name="Then The book will be added to the basket" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Add a book to the basket" name="Scenario: Add a book to the basket" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Add a book to the basket" name="Scenario: Add a book to the basket" time="0.005"/>
+  <testcase classname="Scenario: Edit the basket" name="Given I have an existing account with an online bookshop" time="0.001">
+    <skipped/>
+    <system-out>
+  Scenario: Add a book to the basket          &amp;#27;[90m# OnlineShop.feature:19&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI search and load a specific book&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI click on the Add tp basket option&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mThe book will be added to the basket&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: Edit the basket" name="When I log into the website" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Edit the basket" name="And I add a book to the basket" time="0.004">
+    <skipped/>
+    <system-out>
+  Background:                                                &amp;#27;[90m# OnlineShop.feature:4&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33mI have an existing account with an online bookshop&amp;#27;[0m
+    &amp;#27;[33mWhen &amp;#27;[0m&amp;#27;[33mI log into the website&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Scenario: Edit the basket" name="And I load the added products" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Edit the basket" name="Then I will be able to increase the quantity" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Edit the basket" name="And I will be able to remove the products from the basket" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Edit the basket" name="Scenario: Edit the basket" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Edit the basket" name="Scenario: Edit the basket" time="0.005"/>
+  <testcase classname="| 31460290 | Viersen |" name="Given I want to search for specific bank branches in Germay" time="0.093">
+    <skipped/>
+    <system-out>
+  Scenario: Edit the basket                                   &amp;#27;[90m# OnlineShop.feature:24&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI add a book to the basket&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI load the added products&amp;#27;[0m
+    &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mI will be able to increase the quantity&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI will be able to remove the products from the basket&amp;#27;[0m
+Feature: Bank branches search based on a BLZ codes
+
+  Scenario Outline: Find bank branches in Germany using BLZ codes &amp;#27;[90m# SOAPService.feature:3&amp;#27;[0m
+    &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI want to search for specific bank branches in Germay&amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI run a SOAP request using code &lt;BLZ&gt;&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI verify the location &lt;location&gt;&amp;#27;[0m
+
+    Examples: 
+</system-out>
+  </testcase>
+  <testcase classname="| 31460290 | Viersen |" name="When I run a SOAP request using code 31460290" time="0.093">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 31460290 | Viersen |" name="Then I verify the location Viersen" time="0.094">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 31460290 | Viersen |" name="| 31460290 | Viersen |" time="0.094">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 31460290 | Viersen |" name="| 31460290 | Viersen |" time="0.094"/>
+  <testcase classname="| 31061108 | Willich |" name="Given I want to search for specific bank branches in Germay" time="0.003">
+    <skipped/>
+    <system-out>
+  Scenario Outline: Find bank branches in Germany using BLZ codes &amp;#27;[90m# SOAPService.feature:10&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33mI want to search for specific bank branches in Germay&amp;#27;[0m   &amp;#27;[90m# SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay()&amp;#27;[0m
+      &amp;#27;[31mcucumber.api.PendingException: TODO: implement me
+      	at com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay(SOAPStepDefs.java:13)
+      	at ?.Given I want to search for specific bank branches in Germay(SOAPService.feature:4)
+      &amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI run a SOAP request using code &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m31460290&amp;#27;[0m                 &amp;#27;[90m# SOAPStepDefs.i_run_a_SOAP_request_using_code(int)&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI verify the location Viersen&amp;#27;[0m                            &amp;#27;[90m# SOAPStepDefs.i_verify_the_location_Viersen()&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="| 31061108 | Willich |" name="When I run a SOAP request using code 31061108" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 31061108 | Willich |" name="Then I verify the location Willich" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 31061108 | Willich |" name="| 31061108 | Willich |" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 31061108 | Willich |" name="| 31061108 | Willich |" time="0.005"/>
+  <testcase classname="| 31261282 | Erkelenz |" name="Given I want to search for specific bank branches in Germay" time="0.003">
+    <skipped/>
+    <system-out>
+  Scenario Outline: Find bank branches in Germany using BLZ codes &amp;#27;[90m# SOAPService.feature:11&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33mI want to search for specific bank branches in Germay&amp;#27;[0m   &amp;#27;[90m# SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay()&amp;#27;[0m
+      &amp;#27;[31mcucumber.api.PendingException: TODO: implement me
+      	at com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay(SOAPStepDefs.java:13)
+      	at ?.Given I want to search for specific bank branches in Germay(SOAPService.feature:4)
+      &amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI run a SOAP request using code &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m31061108&amp;#27;[0m                 &amp;#27;[90m# SOAPStepDefs.i_run_a_SOAP_request_using_code(int)&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI verify the location Willich&amp;#27;[0m                            &amp;#27;[90m# SOAPStepDefs.i_verify_the_location_Willich()&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="| 31261282 | Erkelenz |" name="When I run a SOAP request using code 31261282" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 31261282 | Erkelenz |" name="Then I verify the location Erkelenz" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 31261282 | Erkelenz |" name="| 31261282 | Erkelenz |" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 31261282 | Erkelenz |" name="| 31261282 | Erkelenz |" time="0.005"/>
+  <testcase classname="| 34270094 | Solingen |" name="Given I want to search for specific bank branches in Germay" time="0.003">
+    <skipped/>
+    <system-out>
+  Scenario Outline: Find bank branches in Germany using BLZ codes &amp;#27;[90m# SOAPService.feature:12&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33mI want to search for specific bank branches in Germay&amp;#27;[0m   &amp;#27;[90m# SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay()&amp;#27;[0m
+      &amp;#27;[31mcucumber.api.PendingException: TODO: implement me
+      	at com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay(SOAPStepDefs.java:13)
+      	at ?.Given I want to search for specific bank branches in Germay(SOAPService.feature:4)
+      &amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI run a SOAP request using code &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m31261282&amp;#27;[0m                 &amp;#27;[90m# SOAPStepDefs.i_run_a_SOAP_request_using_code(int)&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI verify the location Erkelenz&amp;#27;[0m                           &amp;#27;[90m# SOAPStepDefs.i_verify_the_location_Erkelenz()&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="| 34270094 | Solingen |" name="When I run a SOAP request using code 34270094" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 34270094 | Solingen |" name="Then I verify the location Solingen" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 34270094 | Solingen |" name="| 34270094 | Solingen |" time="0.008">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 34270094 | Solingen |" name="| 34270094 | Solingen |" time="0.008"/>
+  <testcase classname="| 43020000 | Westfalenbank |" name="Given I want to search for bank names in Germay" time="0.001">
+    <skipped/>
+    <system-out>
+  Scenario Outline: Find bank branches in Germany using BLZ codes &amp;#27;[90m# SOAPService.feature:13&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33mI want to search for specific bank branches in Germay&amp;#27;[0m   &amp;#27;[90m# SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay()&amp;#27;[0m
+      &amp;#27;[31mcucumber.api.PendingException: TODO: implement me
+      	at com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay(SOAPStepDefs.java:13)
+      	at ?.Given I want to search for specific bank branches in Germay(SOAPService.feature:4)
+      &amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI run a SOAP request using code &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m34270094&amp;#27;[0m                 &amp;#27;[90m# SOAPStepDefs.i_run_a_SOAP_request_using_code(int)&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI verify the location Solingen&amp;#27;[0m                           &amp;#27;[90m# SOAPStepDefs.i_verify_the_location_Solingen()&amp;#27;[0m
+
+  Scenario Outline: Find bank names using BLZ codes &amp;#27;[90m# SOAPService.feature:16&amp;#27;[0m
+    &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI want to search for bank names in Germay&amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI run a SOAP request using code &lt;BLZ&gt;&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI verify the bank name &lt;name&gt;&amp;#27;[0m
+
+    Examples: 
+</system-out>
+  </testcase>
+  <testcase classname="| 43020000 | Westfalenbank |" name="When I run a SOAP request using code 43020000" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 43020000 | Westfalenbank |" name="Then I verify the bank name Westfalenbank" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 43020000 | Westfalenbank |" name="| 43020000 | Westfalenbank |" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 43020000 | Westfalenbank |" name="| 43020000 | Westfalenbank |" time="0.003"/>
+  <testcase classname="| 43000000 | Bundesbank |" name="Given I want to search for bank names in Germay" time="0.002">
+    <skipped/>
+    <system-out>
+  Scenario Outline: Find bank names using BLZ codes &amp;#27;[90m# SOAPService.feature:23&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33mI want to search for bank names in Germay&amp;#27;[0m &amp;#27;[90m# SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay()&amp;#27;[0m
+      &amp;#27;[31mcucumber.api.PendingException: TODO: implement me
+      	at com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay(SOAPStepDefs.java:49)
+      	at ?.Given I want to search for bank names in Germay(SOAPService.feature:17)
+      &amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI run a SOAP request using code &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m43020000&amp;#27;[0m   &amp;#27;[90m# SOAPStepDefs.i_run_a_SOAP_request_using_code(int)&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI verify the bank name Westfalenbank&amp;#27;[0m       &amp;#27;[90m# SOAPStepDefs.i_verify_the_bank_name_Westfalenbank()&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="| 43000000 | Bundesbank |" name="When I run a SOAP request using code 43000000" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 43000000 | Bundesbank |" name="Then I verify the bank name Bundesbank" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 43000000 | Bundesbank |" name="| 43000000 | Bundesbank |" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 43000000 | Bundesbank |" name="| 43000000 | Bundesbank |" time="0.003"/>
+  <testcase classname="| 43060129 | Volksbank Bochum Witten |" name="Given I want to search for bank names in Germay" time="0.002">
+    <skipped/>
+    <system-out>
+  Scenario Outline: Find bank names using BLZ codes &amp;#27;[90m# SOAPService.feature:24&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33mI want to search for bank names in Germay&amp;#27;[0m &amp;#27;[90m# SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay()&amp;#27;[0m
+      &amp;#27;[31mcucumber.api.PendingException: TODO: implement me
+      	at com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay(SOAPStepDefs.java:49)
+      	at ?.Given I want to search for bank names in Germay(SOAPService.feature:17)
+      &amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI run a SOAP request using code &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m43000000&amp;#27;[0m   &amp;#27;[90m# SOAPStepDefs.i_run_a_SOAP_request_using_code(int)&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI verify the bank name Bundesbank&amp;#27;[0m          &amp;#27;[90m# SOAPStepDefs.i_verify_the_bank_name_Bundesbank()&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="| 43060129 | Volksbank Bochum Witten |" name="When I run a SOAP request using code 43060129" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 43060129 | Volksbank Bochum Witten |" name="Then I verify the bank name Volksbank Bochum Witten" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 43060129 | Volksbank Bochum Witten |" name="| 43060129 | Volksbank Bochum Witten |" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 43060129 | Volksbank Bochum Witten |" name="| 43060129 | Volksbank Bochum Witten |" time="0.003"/>
+  <testcase classname="| 43080083 | Dresdner Bank |" name="Given I want to search for bank names in Germay" time="0.002">
+    <skipped/>
+    <system-out>
+  Scenario Outline: Find bank names using BLZ codes     &amp;#27;[90m# SOAPService.feature:25&amp;#27;[0m
+    &amp;#27;[33mGiven &amp;#27;[0m&amp;#27;[33mI want to search for bank names in Germay&amp;#27;[0m     &amp;#27;[90m# SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay()&amp;#27;[0m
+      &amp;#27;[31mcucumber.api.PendingException: TODO: implement me
+      	at com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay(SOAPStepDefs.java:49)
+      	at ?.Given I want to search for bank names in Germay(SOAPService.feature:17)
+      &amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI run a SOAP request using code &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m43060129&amp;#27;[0m       &amp;#27;[90m# SOAPStepDefs.i_run_a_SOAP_request_using_code(int)&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI verify the bank name Volksbank Bochum Witten&amp;#27;[0m &amp;#27;[90m# SOAPStepDefs.i_verify_the_bank_name_Volksbank_Bochum_Witten()&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="| 43080083 | Dresdner Bank |" name="When I run a SOAP request using code 43080083" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 43080083 | Dresdner Bank |" name="Then I verify the bank name Dresdner Bank" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 43080083 | Dresdner Bank |" name="| 43080083 | Dresdner Bank |" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 43080083 | Dresdner Bank |" name="| 43080083 | Dresdner Bank |" time="0.003"/>
+  <testcase classname="Scenario: Register new user in WordPress" name="Given I want to create new user profile" time="0"/>
+  <testcase classname="Scenario: Register new user in WordPress" name="When I fill out the form and click on the Create Account button" time="0"/>
+  <testcase classname="Scenario: Register new user in WordPress" name="Then My account is created and I&apos;m able to log into WordPress with that account" time="0"/>
+  <testcase classname="Scenario: Register new user in WordPress" name="Scenario: Register new user in WordPress" time="0"/>
+  <testcase classname="Scenario: Login attempt with invalid credentials" name="Given I want to validate error message from WordPress" time="0"/>
+  <testcase classname="Scenario: Login attempt with invalid credentials" name="When I enter invalid credentials and click on Login" time="0"/>
+  <testcase classname="Scenario: Login attempt with invalid credentials" name="Then I won&apos;t be logged in" time="0"/>
+  <testcase classname="Scenario: Login attempt with invalid credentials" name="Scenario: Login attempt with invalid credentials" time="0"/>
+  <testcase classname="Scenario: Create an entry in the DB" name="Given I want to create new employee entry in the DB" time="0"/>
+  <testcase classname="Scenario: Create an entry in the DB" name="When I send my json to the POST endpoint" time="0"/>
+  <testcase classname="Scenario: Create an entry in the DB" name="Then I will see response 200" time="0"/>
+  <testcase classname="Scenario: Create an entry in the DB" name="And The response body will contain new employee ID" time="0"/>
+  <testcase classname="Scenario: Create an entry in the DB" name="Scenario: Create an entry in the DB" time="0.001"/>
+  <testcase classname="Scenario: Retrieve information from the DB" name="Given An employee entry exists in the DB" time="0"/>
+  <testcase classname="Scenario: Retrieve information from the DB" name="When I perform GET API call using the employee ID" time="0"/>
+  <testcase classname="Scenario: Retrieve information from the DB" name="Then The API call will return the employee name" time="0"/>
+  <testcase classname="Scenario: Retrieve information from the DB" name="Scenario: Retrieve information from the DB" time="0"/>
+  <testcase classname="Scenario: Delete an entry" name="Given An employee entry exists in the DB" time="0"/>
+  <testcase classname="Scenario: Delete an entry" name="When I perform DELETE API call using the employee ID" time="0"/>
+  <testcase classname="Scenario: Delete an entry" name="Then the user will no longer exist" time="0"/>
+  <testcase classname="Scenario: Delete an entry" name="Scenario: Delete an entry" time="0.001"/>
+</testsuite>
