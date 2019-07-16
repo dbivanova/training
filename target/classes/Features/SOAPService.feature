@@ -1,8 +1,7 @@
 Feature: Bank branches search based on a BLZ codes
   
    Scenario Outline: Find bank branches in Germany using BLZ codes
-    Given I want to search for specific bank branches in Germay
-    When I run a SOAP request using code <BLZ>
+    Given I run a SOAP request using code <BLZ>
     Then I verify the location <location>
 
     Examples: 
@@ -14,8 +13,7 @@ Feature: Bank branches search based on a BLZ codes
 
       
    Scenario Outline: Find bank names using BLZ codes
-    Given I want to search for bank names in Germay
-    When I run a SOAP request using code <BLZ>
+    Given I run a SOAP request using code <BLZ>
     Then I verify the bank name <name>
 
     Examples: 

@@ -3,19 +3,14 @@ package com.examples.test.training.glue;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import com.examples.test.training.implementation.SOAPImplementation;
 
 public class SOAPStepDefs {
+SOAPImplementation actions = new SOAPImplementation();
 
-	@Given("^I want to search for specific bank branches in Germay$")
-	public void i_want_to_search_for_specific_bank_branches_in_Germay() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@When("^I run a SOAP request using code (\\d+)$")
-	public void i_run_a_SOAP_request_using_code(int arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
+	@Given("^I run a SOAP request using code (\\d+)$")
+	public void runRequest(int arg1) throws Throwable {
+	    actions.runRequest();
 	    throw new PendingException();
 	}
 
@@ -43,12 +38,6 @@ public class SOAPStepDefs {
 	    throw new PendingException();
 	}
 
-	@Given("^I want to search for bank names in Germay$")
-	public void i_want_to_search_for_bank_names_in_Germay() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
 	@Then("^I verify the bank name Westfalenbank$")
 	public void i_verify_the_bank_name_Westfalenbank() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
@@ -71,6 +60,6 @@ public class SOAPStepDefs {
 	public void i_verify_the_bank_name_Dresdner_Bank() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new PendingException();
-	}
-	
+	} 
+
 }

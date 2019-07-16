@@ -146,7 +146,6 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>4.4.0</version>
-            <scope>test</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
@@ -161,7 +160,6 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
             <version>4.4.0</version>
-            <scope>test</scope>
         </dependency>
 <dependency>
     <groupId>org.apache.maven.surefire</groupId>
