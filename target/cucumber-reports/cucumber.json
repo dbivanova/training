@@ -287,7 +287,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 10,
+        "line": 9,
         "name": "Find bank branches in Germany using BLZ codes",
         "description": "",
         "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;2",
@@ -296,22 +296,11 @@
         "steps": [
           {
             "result": {
-              "duration": 89101927,
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay(SOAPStepDefs.java:13)\r\n\tat ✽.Given I want to search for specific bank branches in Germay(SOAPService.feature:4)\r\n",
-              "status": "pending"
+              "duration": 2433905903,
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 31460290(SOAPService.feature:4)\r\n",
+              "status": "failed"
             },
             "line": 4,
-            "name": "I want to search for specific bank branches in Germay",
-            "match": {
-              "location": "SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 5,
             "name": "I run a SOAP request using code 31460290",
             "match": {
               "arguments": [
@@ -320,18 +309,18 @@
                   "offset": 32
                 }
               ],
-              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+              "location": "SOAPStepDefs.runRequest(int)"
             },
             "matchedColumns": [
               0
             ],
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 6,
+            "line": 5,
             "name": "I verify the location Viersen",
             "match": {
               "location": "SOAPStepDefs.i_verify_the_location_Viersen()"
@@ -344,7 +333,7 @@
         ]
       },
       {
-        "line": 11,
+        "line": 10,
         "name": "Find bank branches in Germany using BLZ codes",
         "description": "",
         "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;3",
@@ -353,22 +342,11 @@
         "steps": [
           {
             "result": {
-              "duration": 270409,
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay(SOAPStepDefs.java:13)\r\n\tat ✽.Given I want to search for specific bank branches in Germay(SOAPService.feature:4)\r\n",
-              "status": "pending"
+              "duration": 140215988,
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 31061108(SOAPService.feature:4)\r\n",
+              "status": "failed"
             },
             "line": 4,
-            "name": "I want to search for specific bank branches in Germay",
-            "match": {
-              "location": "SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 5,
             "name": "I run a SOAP request using code 31061108",
             "match": {
               "arguments": [
@@ -377,18 +355,18 @@
                   "offset": 32
                 }
               ],
-              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+              "location": "SOAPStepDefs.runRequest(int)"
             },
             "matchedColumns": [
               0
             ],
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 6,
+            "line": 5,
             "name": "I verify the location Willich",
             "match": {
               "location": "SOAPStepDefs.i_verify_the_location_Willich()"
@@ -401,7 +379,7 @@
         ]
       },
       {
-        "line": 12,
+        "line": 11,
         "name": "Find bank branches in Germany using BLZ codes",
         "description": "",
         "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;4",
@@ -410,22 +388,11 @@
         "steps": [
           {
             "result": {
-              "duration": 213564,
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay(SOAPStepDefs.java:13)\r\n\tat ✽.Given I want to search for specific bank branches in Germay(SOAPService.feature:4)\r\n",
-              "status": "pending"
+              "duration": 138769595,
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 31261282(SOAPService.feature:4)\r\n",
+              "status": "failed"
             },
             "line": 4,
-            "name": "I want to search for specific bank branches in Germay",
-            "match": {
-              "location": "SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 5,
             "name": "I run a SOAP request using code 31261282",
             "match": {
               "arguments": [
@@ -434,18 +401,18 @@
                   "offset": 32
                 }
               ],
-              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+              "location": "SOAPStepDefs.runRequest(int)"
             },
             "matchedColumns": [
               0
             ],
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 6,
+            "line": 5,
             "name": "I verify the location Erkelenz",
             "match": {
               "location": "SOAPStepDefs.i_verify_the_location_Erkelenz()"
@@ -458,7 +425,7 @@
         ]
       },
       {
-        "line": 13,
+        "line": 12,
         "name": "Find bank branches in Germany using BLZ codes",
         "description": "",
         "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;5",
@@ -467,22 +434,11 @@
         "steps": [
           {
             "result": {
-              "duration": 179220,
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay(SOAPStepDefs.java:13)\r\n\tat ✽.Given I want to search for specific bank branches in Germay(SOAPService.feature:4)\r\n",
-              "status": "pending"
+              "duration": 142321231,
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 34270094(SOAPService.feature:4)\r\n",
+              "status": "failed"
             },
             "line": 4,
-            "name": "I want to search for specific bank branches in Germay",
-            "match": {
-              "location": "SOAPStepDefs.i_want_to_search_for_specific_bank_branches_in_Germay()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 5,
             "name": "I run a SOAP request using code 34270094",
             "match": {
               "arguments": [
@@ -491,18 +447,18 @@
                   "offset": 32
                 }
               ],
-              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+              "location": "SOAPStepDefs.runRequest(int)"
             },
             "matchedColumns": [
               0
             ],
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 6,
+            "line": 5,
             "name": "I verify the location Solingen",
             "match": {
               "location": "SOAPStepDefs.i_verify_the_location_Solingen()"
@@ -515,7 +471,7 @@
         ]
       },
       {
-        "line": 23,
+        "line": 21,
         "name": "Find bank names using BLZ codes",
         "description": "",
         "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;2",
@@ -524,22 +480,11 @@
         "steps": [
           {
             "result": {
-              "duration": 182773,
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay(SOAPStepDefs.java:49)\r\n\tat ✽.Given I want to search for bank names in Germay(SOAPService.feature:17)\r\n",
-              "status": "pending"
+              "duration": 134548056,
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 43020000(SOAPService.feature:16)\r\n",
+              "status": "failed"
             },
-            "line": 17,
-            "name": "I want to search for bank names in Germay",
-            "match": {
-              "location": "SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
+            "line": 16,
             "name": "I run a SOAP request using code 43020000",
             "match": {
               "arguments": [
@@ -548,18 +493,18 @@
                   "offset": 32
                 }
               ],
-              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+              "location": "SOAPStepDefs.runRequest(int)"
             },
             "matchedColumns": [
               0
             ],
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 19,
+            "line": 17,
             "name": "I verify the bank name Westfalenbank",
             "match": {
               "location": "SOAPStepDefs.i_verify_the_bank_name_Westfalenbank()"
@@ -572,7 +517,7 @@
         ]
       },
       {
-        "line": 24,
+        "line": 22,
         "name": "Find bank names using BLZ codes",
         "description": "",
         "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;3",
@@ -581,22 +526,11 @@
         "steps": [
           {
             "result": {
-              "duration": 182772,
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay(SOAPStepDefs.java:49)\r\n\tat ✽.Given I want to search for bank names in Germay(SOAPService.feature:17)\r\n",
-              "status": "pending"
+              "duration": 138567084,
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 43000000(SOAPService.feature:16)\r\n",
+              "status": "failed"
             },
-            "line": 17,
-            "name": "I want to search for bank names in Germay",
-            "match": {
-              "location": "SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
+            "line": 16,
             "name": "I run a SOAP request using code 43000000",
             "match": {
               "arguments": [
@@ -605,18 +539,18 @@
                   "offset": 32
                 }
               ],
-              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+              "location": "SOAPStepDefs.runRequest(int)"
             },
             "matchedColumns": [
               0
             ],
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 19,
+            "line": 17,
             "name": "I verify the bank name Bundesbank",
             "match": {
               "location": "SOAPStepDefs.i_verify_the_bank_name_Bundesbank()"
@@ -629,7 +563,7 @@
         ]
       },
       {
-        "line": 25,
+        "line": 23,
         "name": "Find bank names using BLZ codes",
         "description": "",
         "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;4",
@@ -638,22 +572,11 @@
         "steps": [
           {
             "result": {
-              "duration": 172114,
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay(SOAPStepDefs.java:49)\r\n\tat ✽.Given I want to search for bank names in Germay(SOAPService.feature:17)\r\n",
-              "status": "pending"
+              "duration": 134963736,
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 43060129(SOAPService.feature:16)\r\n",
+              "status": "failed"
             },
-            "line": 17,
-            "name": "I want to search for bank names in Germay",
-            "match": {
-              "location": "SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
+            "line": 16,
             "name": "I run a SOAP request using code 43060129",
             "match": {
               "arguments": [
@@ -662,18 +585,18 @@
                   "offset": 32
                 }
               ],
-              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+              "location": "SOAPStepDefs.runRequest(int)"
             },
             "matchedColumns": [
               0
             ],
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 19,
+            "line": 17,
             "name": "I verify the bank name Volksbank Bochum Witten",
             "match": {
               "location": "SOAPStepDefs.i_verify_the_bank_name_Volksbank_Bochum_Witten()"
@@ -686,7 +609,7 @@
         ]
       },
       {
-        "line": 26,
+        "line": 24,
         "name": "Find bank names using BLZ codes",
         "description": "",
         "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;5",
@@ -695,22 +618,11 @@
         "steps": [
           {
             "result": {
-              "duration": 164219,
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.examples.test.training.glue.SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay(SOAPStepDefs.java:49)\r\n\tat ✽.Given I want to search for bank names in Germay(SOAPService.feature:17)\r\n",
-              "status": "pending"
+              "duration": 135251120,
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 43080083(SOAPService.feature:16)\r\n",
+              "status": "failed"
             },
-            "line": 17,
-            "name": "I want to search for bank names in Germay",
-            "match": {
-              "location": "SOAPStepDefs.i_want_to_search_for_bank_names_in_Germay()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
+            "line": 16,
             "name": "I run a SOAP request using code 43080083",
             "match": {
               "arguments": [
@@ -719,18 +631,18 @@
                   "offset": 32
                 }
               ],
-              "location": "SOAPStepDefs.i_run_a_SOAP_request_using_code(int)"
+              "location": "SOAPStepDefs.runRequest(int)"
             },
             "matchedColumns": [
               0
             ],
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 19,
+            "line": 17,
             "name": "I verify the bank name Dresdner Bank",
             "match": {
               "location": "SOAPStepDefs.i_verify_the_bank_name_Dresdner_Bank()"
@@ -762,7 +674,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4824727,
+              "duration": 3930998,
               "status": "passed"
             },
             "line": 6,
@@ -774,7 +686,7 @@
           },
           {
             "result": {
-              "duration": 8309394441,
+              "duration": 11262833279,
               "status": "passed"
             },
             "line": 7,
@@ -786,7 +698,7 @@
           },
           {
             "result": {
-              "duration": 10576803253,
+              "duration": 12430782185,
               "status": "passed"
             },
             "line": 8,
@@ -808,7 +720,7 @@
         "steps": [
           {
             "result": {
-              "duration": 60004,
+              "duration": 72241,
               "status": "passed"
             },
             "line": 11,
@@ -820,7 +732,7 @@
           },
           {
             "result": {
-              "duration": 6380085268,
+              "duration": 8683705465,
               "status": "passed"
             },
             "line": 12,
@@ -832,7 +744,7 @@
           },
           {
             "result": {
-              "duration": 6900793858,
+              "duration": 8716867092,
               "status": "passed"
             },
             "line": 13,
@@ -864,7 +776,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1942716327,
+              "duration": 978924277,
               "status": "passed"
             },
             "line": 6,
@@ -876,7 +788,7 @@
           },
           {
             "result": {
-              "duration": 1068289120,
+              "duration": 1057715166,
               "status": "passed"
             },
             "line": 7,
@@ -888,7 +800,7 @@
           },
           {
             "result": {
-              "duration": 2154982,
+              "duration": 171720,
               "status": "passed"
             },
             "line": 8,
@@ -906,7 +818,7 @@
           },
           {
             "result": {
-              "duration": 27633,
+              "duration": 125138,
               "status": "passed"
             },
             "line": 9,
@@ -928,7 +840,7 @@
         "steps": [
           {
             "result": {
-              "duration": 88820,
+              "duration": 77767,
               "status": "passed"
             },
             "line": 13,
@@ -940,7 +852,7 @@
           },
           {
             "result": {
-              "duration": 481620086,
+              "duration": 555239443,
               "status": "passed"
             },
             "line": 14,
@@ -952,7 +864,7 @@
           },
           {
             "result": {
-              "duration": 518213327,
+              "duration": 489492140,
               "status": "passed"
             },
             "line": 15,
@@ -974,7 +886,7 @@
         "steps": [
           {
             "result": {
-              "duration": 31581,
+              "duration": 54477,
               "status": "passed"
             },
             "line": 18,
@@ -986,7 +898,7 @@
           },
           {
             "result": {
-              "duration": 466955235,
+              "duration": 494464510,
               "status": "passed"
             },
             "line": 19,
@@ -998,7 +910,7 @@
           },
           {
             "result": {
-              "duration": 462991079,
+              "duration": 499453853,
               "status": "passed"
             },
             "line": 20,

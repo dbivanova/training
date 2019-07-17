@@ -1,34 +1,36 @@
 package com.examples.test.training.implementation;
 
-import java.io.File;
-import java.io.FileInputStream;
+import cucumber.api.java.Before;
+import io.restassured.RestAssured;
+import io.restassured.response.ValidatableResponse;
+import testData.SoapXML;
 
-import org.apache.commons.io.IOUtils;
-
-import com.jayway.restassured.RestAssured;
-import io.restassured.path.xml.XmlPath;
-import io.restassured.response.Response;
 public class SOAPImplementation {
 
-
+	private String BLZ;
+	SoapXML xmlBody = new SoapXML();
+	private ValidatableResponse response;
+    
+@Before()
+    public void setUp() {
+	    RestAssured.baseURI = "http://www.thomas-bayer.com";
+        RestAssured.basePath = "/axis2/services/BLZService?wsdl";
+    }	
 public void runRequest() {
-	FileInputStream fileInputStream = new FileInputStream(new File("/training/src/test/resources/testData/requestBody.xml"));
-    RestAssured.baseURI="http://www.thomas-bayer.com/axis2/services/BLZService";
-    Response response = given()
-    		.header("Content-Type", "text/xml")
-            .and()
-            .body(IOUtils.toString(fileInputStream,"UTF-8"))
-            .when()
-            .post("/converter.asmx")
-            .then()
-            .statusCode(200)
-            .and()
-            .log().all()
-            .extract().response();
 
-    XmlPath jsXpath= new XmlPath(response.asString());//Converting string into xml path to assert
-    String bank=jsXpath.getString("GetResults");
-    System.out.println("ban is returned: " +  bank);
+	xmlBody.setBLZ(BLZ);
+	System.out.println(xmlBody.getBody());
+
+		response = RestAssured.given()
+            .header("SOAPAction", "Content-Type", "text/xml")
+            .and()
+            .body(xmlBody.getBody())
+            .when()
+            .post(RestAssured.basePath)
+            .then()
+            .statusCode(200);
+//XmlPath jsXpath= new XmlPath(response.asString());
+//System.out.println(jsXpath);
 
 }
 
