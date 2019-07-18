@@ -6,6 +6,10 @@ formatter.feature({
   "id": "online-bookshop",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 1090763892,
+  "status": "passed"
+});
 formatter.background({
   "line": 4,
   "name": "",
@@ -23,13 +27,19 @@ formatter.step({
   "name": "I log into the website",
   "keyword": "When "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "OnlineShopStepDef.setUp()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 222018483,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OnlineShopStepDef.login()"
+});
+formatter.result({
+  "duration": 77373,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 8,
@@ -59,21 +69,37 @@ formatter.step({
   "name": "The book description will be loaded with price and an option to order",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "OnlineShopStepDef.extendCategories()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 142113,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "OnlineShopStepDef.chooseRandomBookCategory()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 83689,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OnlineShopStepDef.chooseBookFromList()"
+});
+formatter.result({
+  "duration": 82899,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OnlineShopStepDef.bookDetailsValidation()"
+});
+formatter.result({
+  "duration": 161850,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 65135,
+  "status": "passed"
 });
 formatter.background({
   "line": 4,
@@ -92,13 +118,19 @@ formatter.step({
   "name": "I log into the website",
   "keyword": "When "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "OnlineShopStepDef.setUp()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 117638,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OnlineShopStepDef.login()"
+});
+formatter.result({
+  "duration": 76583,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 14,
@@ -123,17 +155,30 @@ formatter.step({
   "name": "The book description will be loaded with price and an option to order",
   "keyword": "And "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "OnlineShopStepDef.bookSearch()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 58819,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "OnlineShopStepDef.selectBookFromSearch()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 53687,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OnlineShopStepDef.bookDetailsValidation()"
+});
+formatter.result({
+  "duration": 66714,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 38291,
+  "status": "passed"
 });
 formatter.background({
   "line": 4,
@@ -152,13 +197,19 @@ formatter.step({
   "name": "I log into the website",
   "keyword": "When "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "OnlineShopStepDef.setUp()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 63162,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OnlineShopStepDef.login()"
+});
+formatter.result({
+  "duration": 97900,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 19,
@@ -175,7 +226,7 @@ formatter.step({
 });
 formatter.step({
   "line": 21,
-  "name": "I click on the Add tp basket option",
+  "name": "I click on the Add to basket option",
   "keyword": "And "
 });
 formatter.step({
@@ -183,17 +234,30 @@ formatter.step({
   "name": "The book will be added to the basket",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "OnlineShopStepDef.searchBook()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 74609,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "OnlineShopStepDef.addToBasket()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 77768,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OnlineShopStepDef.basketValidation()"
+});
+formatter.result({
+  "duration": 122770,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 40660,
+  "status": "passed"
 });
 formatter.background({
   "line": 4,
@@ -212,13 +276,19 @@ formatter.step({
   "name": "I log into the website",
   "keyword": "When "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "OnlineShopStepDef.setUp()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 54477,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OnlineShopStepDef.login()"
+});
+formatter.result({
+  "duration": 31976,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 24,
@@ -248,21 +318,33 @@ formatter.step({
   "name": "I will be able to remove the products from the basket",
   "keyword": "And "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "OnlineShopStepDef.addAbookToBasket()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 80925,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "OnlineShopStepDef.loadBasket()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 69083,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OnlineShopStepDef.increaseQuantity()"
+});
+formatter.result({
+  "duration": 74214,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OnlineShopStepDef.emptyBasket()"
+});
+formatter.result({
+  "duration": 67504,
+  "status": "passed"
 });
 formatter.uri("SOAPService.feature");
 formatter.feature({
@@ -290,8 +372,13 @@ formatter.step({
   "name": "I verify the location \u003clocation\u003e",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 6,
+  "name": "the bank name is \u003cname\u003e",
+  "keyword": "And "
+});
 formatter.examples({
-  "line": 7,
+  "line": 8,
   "name": "",
   "description": "",
   "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;",
@@ -299,48 +386,57 @@ formatter.examples({
     {
       "cells": [
         "BLZ",
-        "location"
+        "location",
+        "name"
       ],
-      "line": 8,
+      "line": 9,
       "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;1"
     },
     {
       "cells": [
         "31460290",
-        "Viersen"
+        "Viersen",
+        "Volksbank Viersen"
       ],
-      "line": 9,
+      "line": 10,
       "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;2"
     },
     {
       "cells": [
         "31061108",
-        "Willich"
+        "Willich",
+        "Volksbank Willich"
       ],
-      "line": 10,
+      "line": 11,
       "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;3"
     },
     {
       "cells": [
         "31261282",
-        "Erkelenz"
+        "Erkelenz",
+        "Volksbank Erkelenz-Hückelhoven-Wegberg"
       ],
-      "line": 11,
+      "line": 12,
       "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;4"
     },
     {
       "cells": [
         "34270094",
-        "Solingen"
+        "Solingen",
+        "Deutsche Bank"
       ],
-      "line": 12,
+      "line": 13,
       "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;5"
     }
   ],
   "keyword": "Examples"
 });
+formatter.before({
+  "duration": 58030,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 9,
+  "line": 10,
   "name": "Find bank branches in Germany using BLZ codes",
   "description": "",
   "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;2",
@@ -363,6 +459,14 @@ formatter.step({
   ],
   "keyword": "Then "
 });
+formatter.step({
+  "line": 6,
+  "name": "the bank name is Volksbank Viersen",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "And "
+});
 formatter.match({
   "arguments": [
     {
@@ -370,21 +474,32 @@ formatter.match({
       "offset": 32
     }
   ],
-  "location": "SOAPStepDefs.runRequest(int)"
+  "location": "SOAPStepDefs.runRequest(String)"
 });
 formatter.result({
-  "duration": 2433905903,
-  "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 31460290(SOAPService.feature:4)\r\n",
-  "status": "failed"
+  "duration": 3308519386,
+  "status": "passed"
 });
 formatter.match({
-  "location": "SOAPStepDefs.i_verify_the_location_Viersen()"
+  "location": "SOAPStepDefs.verifyViersen()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2730145,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SOAPStepDefs.verifyVolksbankViersen()"
+});
+formatter.result({
+  "duration": 99084,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 39871,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 10,
+  "line": 11,
   "name": "Find bank branches in Germany using BLZ codes",
   "description": "",
   "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;3",
@@ -407,6 +522,14 @@ formatter.step({
   ],
   "keyword": "Then "
 });
+formatter.step({
+  "line": 6,
+  "name": "the bank name is Volksbank Willich",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "And "
+});
 formatter.match({
   "arguments": [
     {
@@ -414,21 +537,32 @@ formatter.match({
       "offset": 32
     }
   ],
-  "location": "SOAPStepDefs.runRequest(int)"
+  "location": "SOAPStepDefs.runRequest(String)"
 });
 formatter.result({
-  "duration": 140215988,
-  "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 31061108(SOAPService.feature:4)\r\n",
-  "status": "failed"
+  "duration": 208630274,
+  "status": "passed"
 });
 formatter.match({
-  "location": "SOAPStepDefs.i_verify_the_location_Willich()"
+  "location": "SOAPStepDefs.verifyWillich()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 101058,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SOAPStepDefs.verifyVolksbankWillich()"
+});
+formatter.result({
+  "duration": 77373,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 48950,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 11,
+  "line": 12,
   "name": "Find bank branches in Germany using BLZ codes",
   "description": "",
   "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;4",
@@ -451,6 +585,14 @@ formatter.step({
   ],
   "keyword": "Then "
 });
+formatter.step({
+  "line": 6,
+  "name": "the bank name is Volksbank Erkelenz-Hückelhoven-Wegberg",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "And "
+});
 formatter.match({
   "arguments": [
     {
@@ -458,21 +600,32 @@ formatter.match({
       "offset": 32
     }
   ],
-  "location": "SOAPStepDefs.runRequest(int)"
+  "location": "SOAPStepDefs.runRequest(String)"
 });
 formatter.result({
-  "duration": 138769595,
-  "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 31261282(SOAPService.feature:4)\r\n",
-  "status": "failed"
+  "duration": 202922470,
+  "status": "passed"
 });
 formatter.match({
-  "location": "SOAPStepDefs.i_verify_the_location_Erkelenz()"
+  "location": "SOAPStepDefs.verifyErkelenz()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 95136,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SOAPStepDefs.verifyVolksbankErkelenzHückelhovenWegberg()"
+});
+formatter.result({
+  "duration": 89215,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 66714,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 12,
+  "line": 13,
   "name": "Find bank branches in Germany using BLZ codes",
   "description": "",
   "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;5",
@@ -495,6 +648,14 @@ formatter.step({
   ],
   "keyword": "Then "
 });
+formatter.step({
+  "line": 6,
+  "name": "the bank name is Deutsche Bank",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "And "
+});
 formatter.match({
   "arguments": [
     {
@@ -502,261 +663,25 @@ formatter.match({
       "offset": 32
     }
   ],
-  "location": "SOAPStepDefs.runRequest(int)"
+  "location": "SOAPStepDefs.runRequest(String)"
 });
 formatter.result({
-  "duration": 142321231,
-  "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 34270094(SOAPService.feature:4)\r\n",
-  "status": "failed"
+  "duration": 197359939,
+  "status": "passed"
 });
 formatter.match({
-  "location": "SOAPStepDefs.i_verify_the_location_Solingen()"
+  "location": "SOAPStepDefs.verifySolingen()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.scenarioOutline({
-  "line": 15,
-  "name": "Find bank names using BLZ codes",
-  "description": "",
-  "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 16,
-  "name": "I run a SOAP request using code \u003cBLZ\u003e",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "I verify the bank name \u003cname\u003e",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 19,
-  "name": "",
-  "description": "",
-  "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;",
-  "rows": [
-    {
-      "cells": [
-        "BLZ",
-        "name"
-      ],
-      "line": 20,
-      "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;1"
-    },
-    {
-      "cells": [
-        "43020000",
-        "Westfalenbank"
-      ],
-      "line": 21,
-      "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;2"
-    },
-    {
-      "cells": [
-        "43000000",
-        "Bundesbank"
-      ],
-      "line": 22,
-      "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;3"
-    },
-    {
-      "cells": [
-        "43060129",
-        "Volksbank Bochum Witten"
-      ],
-      "line": 23,
-      "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;4"
-    },
-    {
-      "cells": [
-        "43080083",
-        "Dresdner Bank"
-      ],
-      "line": 24,
-      "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;5"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 21,
-  "name": "Find bank names using BLZ codes",
-  "description": "",
-  "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 16,
-  "name": "I run a SOAP request using code 43020000",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "I verify the bank name Westfalenbank",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
+  "duration": 196589,
+  "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "43020000",
-      "offset": 32
-    }
-  ],
-  "location": "SOAPStepDefs.runRequest(int)"
+  "location": "SOAPStepDefs.verifyDeutscheBank()"
 });
 formatter.result({
-  "duration": 134548056,
-  "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 43020000(SOAPService.feature:16)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SOAPStepDefs.i_verify_the_bank_name_Westfalenbank()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 22,
-  "name": "Find bank names using BLZ codes",
-  "description": "",
-  "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 16,
-  "name": "I run a SOAP request using code 43000000",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "I verify the bank name Bundesbank",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "43000000",
-      "offset": 32
-    }
-  ],
-  "location": "SOAPStepDefs.runRequest(int)"
-});
-formatter.result({
-  "duration": 138567084,
-  "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 43000000(SOAPService.feature:16)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SOAPStepDefs.i_verify_the_bank_name_Bundesbank()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 23,
-  "name": "Find bank names using BLZ codes",
-  "description": "",
-  "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 16,
-  "name": "I run a SOAP request using code 43060129",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "I verify the bank name Volksbank Bochum Witten",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "43060129",
-      "offset": 32
-    }
-  ],
-  "location": "SOAPStepDefs.runRequest(int)"
-});
-formatter.result({
-  "duration": 134963736,
-  "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 43060129(SOAPService.feature:16)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SOAPStepDefs.i_verify_the_bank_name_Volksbank_Bochum_Witten()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 24,
-  "name": "Find bank names using BLZ codes",
-  "description": "",
-  "id": "bank-branches-search-based-on-a-blz-codes;find-bank-names-using-blz-codes;;5",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 16,
-  "name": "I run a SOAP request using code 43080083",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "I verify the bank name Dresdner Bank",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "43080083",
-      "offset": 32
-    }
-  ],
-  "location": "SOAPStepDefs.runRequest(int)"
-});
-formatter.result({
-  "duration": 135251120,
-  "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:451)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:613)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat com.examples.test.training.implementation.SOAPImplementation.runRequest(SOAPImplementation.java:34)\r\n\tat com.examples.test.training.glue.SOAPStepDefs.runRequest(SOAPStepDefs.java:13)\r\n\tat ✽.Given I run a SOAP request using code 43080083(SOAPService.feature:16)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "SOAPStepDefs.i_verify_the_bank_name_Dresdner_Bank()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 168957,
+  "status": "passed"
 });
 formatter.uri("UserRegistration.feature");
 formatter.feature({
@@ -765,6 +690,10 @@ formatter.feature({
   "description": "\nI want to register new user in WordPress.",
   "id": "user-registration",
   "keyword": "Feature"
+});
+formatter.before({
+  "duration": 57240,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 5,
@@ -793,21 +722,25 @@ formatter.match({
   "location": "UserRegStepDefs.generateUsernamePassword()"
 });
 formatter.result({
-  "duration": 3930998,
+  "duration": 11185857,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegStepDefs.enterNewRegData()"
 });
 formatter.result({
-  "duration": 11262833279,
+  "duration": 8916878224,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegStepDefs.accountCreatedSuccessfully()"
 });
 formatter.result({
-  "duration": 12430782185,
+  "duration": 10762390163,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 44608,
   "status": "passed"
 });
 formatter.scenario({
@@ -837,21 +770,21 @@ formatter.match({
   "location": "UserRegStepDefs.generateCredentials()"
 });
 formatter.result({
-  "duration": 72241,
+  "duration": 95927,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegStepDefs.enterInvalidUsername()"
 });
 formatter.result({
-  "duration": 8683705465,
+  "duration": 7009924606,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegStepDefs.loginFailed()"
 });
 formatter.result({
-  "duration": 8716867092,
+  "duration": 7217100986,
   "status": "passed"
 });
 formatter.uri("restAPI.feature");
@@ -861,6 +794,10 @@ formatter.feature({
   "description": "\r\nI want to execute API calls to create and retrieve information",
   "id": "test-rest-api-calls",
   "keyword": "Feature"
+});
+formatter.before({
+  "duration": 101848,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 5,
@@ -894,15 +831,16 @@ formatter.match({
   "location": "RestApiStepsDef.setUp()"
 });
 formatter.result({
-  "duration": 978924277,
+  "duration": 507577573,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.postJson()"
 });
 formatter.result({
-  "duration": 1057715166,
-  "status": "passed"
+  "duration": 525528788,
+  "error_message": "io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document\r\n\tat io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:930)\r\n\tat io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)\r\n\tat io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:974)\r\n\tat io.restassured.path.json.JsonPath.get(JsonPath.java:201)\r\n\tat io.restassured.path.json.JsonPath.getString(JsonPath.java:351)\r\n\tat com.examples.test.training.implementation.RestApiImplementation.postJson(RestApiImplementation.java:49)\r\n\tat com.examples.test.training.glue.RestApiStepsDef.postJson(RestApiStepsDef.java:21)\r\n\tat ✽.When I send my json to the POST endpoint(restAPI.feature:7)\r\nCaused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading \u0027\u003c\u0027, no possible valid JSON value or punctuation could be recognized.\r\n\tat groovy.json.JsonLexer.nextToken(JsonLexer.java:85)\r\n\tat groovy.json.JsonLexer$nextToken.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)\r\n\tat io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)\r\n\tat io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)\r\n\tat io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:893)\r\n\tat io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:928)\r\n\tat io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)\r\n\tat io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:974)\r\n\tat io.restassured.path.json.JsonPath.get(JsonPath.java:201)\r\n\tat io.restassured.path.json.JsonPath.getString(JsonPath.java:351)\r\n\tat com.examples.test.training.implementation.RestApiImplementation.postJson(RestApiImplementation.java:49)\r\n\tat com.examples.test.training.glue.RestApiStepsDef.postJson(RestApiStepsDef.java:21)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -914,14 +852,16 @@ formatter.match({
   "location": "RestApiStepsDef.validateResponse(int)"
 });
 formatter.result({
-  "duration": 171720,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "RestApiStepsDef.addedEntry()"
 });
 formatter.result({
-  "duration": 125138,
+  "status": "skipped"
+});
+formatter.before({
+  "duration": 28422,
   "status": "passed"
 });
 formatter.scenario({
@@ -951,21 +891,25 @@ formatter.match({
   "location": "RestApiStepsDef.dbQuerySetUp()"
 });
 formatter.result({
-  "duration": 77767,
+  "duration": 112506,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.getEmployee()"
 });
 formatter.result({
-  "duration": 555239443,
+  "duration": 14671962,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.retrieveInformation()"
 });
 formatter.result({
-  "duration": 489492140,
+  "duration": 3705986,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 56845,
   "status": "passed"
 });
 formatter.scenario({
@@ -995,21 +939,21 @@ formatter.match({
   "location": "RestApiStepsDef.dbQuerySetUp()"
 });
 formatter.result({
-  "duration": 54477,
+  "duration": 95531,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.deleteEmployee()"
 });
 formatter.result({
-  "duration": 494464510,
+  "duration": 6118350,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.validateDeletedEntry()"
 });
 formatter.result({
-  "duration": 499453853,
+  "duration": 6515083,
   "status": "passed"
 });
 });

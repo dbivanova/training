@@ -18,7 +18,7 @@ Feature: Online Bookshop
     
  	Scenario: Add a book to the basket
  		And I search and load a specific book
- 		And I click on the Add tp basket option
+ 		And I click on the Add to basket option
  		Then The book will be added to the basket
  		
  	Scenario: Edit the basket

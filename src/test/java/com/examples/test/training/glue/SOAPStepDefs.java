@@ -47,55 +47,51 @@ public class SOAPStepDefs {
 	            .and()
 	            .log().all()
                 .extract().response();
+			
              
 		XmlPath xmlReturned= new XmlPath(res.asInputStream());
-		String location = xmlReturned.get("Envelope.Body.getBankResponse.details.ort");
-		String bankName = xmlReturned.get("Envelope.Body.getBankResponse.details.bezeichnung");
-		
+		location = xmlReturned.get("Envelope.Body.getBankResponse.details.ort");
+		bankName = xmlReturned.get("Envelope.Body.getBankResponse.details.bezeichnung");
 	}
 
-
 	@Then("^I verify the location Viersen$")
-	public void i_verify_the_location_Viersen() throws Throwable {
-		Assert.assertTrue(bankName.contains("Volksbank"));	}
+	public void verifyViersen() {
+		Assert.assertTrue(location.contentEquals("Viersen"));
+	}
 	
-//	@Then("^the bank name is Volksbank Viersen$")
-//	public void the_bank_name_is_Volksbank_Viersen() throws Throwable {
-//	    // Write code here that turns the phrase above into concrete actions
-//	}
-//
-//	@Then("^I verify the location Willich$")
-//	public void i_verify_the_location_Willich() throws Throwable {
-//	    // Write code here that turns the phrase above into concrete actions
-//	}
-//
-//	@Then("^the bank name is Volksbank Willich$")
-//	public void the_bank_name_is_Volksbank_Willich() throws Throwable {
-//	    // Write code here that turns the phrase above into concrete actions
-//	}
-//
-//	@Then("^I verify the location Erkelenz$")
-//	public void i_verify_the_location_Erkelenz() throws Throwable {
-//	    // Write code here that turns the phrase above into concrete actions
-//	}
-//
-//	@Then("^the bank name is Volksbank Erkelenz-Hückelhoven-Wegberg$")
-//	public void the_bank_name_is_Volksbank_Erkelenz_Hückelhoven_Wegberg() throws Throwable {
-//	    // Write code here that turns the phrase above into concrete actions
-//	}
-//
-//	@Then("^I verify the location Solingen$")
-//	public void i_verify_the_location_Solingen() throws Throwable {
-//	    // Write code here that turns the phrase above into concrete actions
-//	}
-//
-//	@Then("^the bank name is Deutsche Bank$")
-//	public void the_bank_name_is_Deutsche_Bank() throws Throwable {
-//	    // Write code here that turns the phrase above into concrete actions
-//	}
-//
-////	@Then("^I verify the location Viersen$")
-////	public void verifyViersen() throws Throwable {
-////		Assert.assertTrue(location.contains("Viersen"));
-////	}
+	@Then("^the bank name is Volksbank Viersen$")
+	public void verifyVolksbankViersen() {
+		Assert.assertTrue(bankName.contentEquals("Volksbank Viersen"));
+	}
+	
+	@Then("^I verify the location Willich$")
+	public void verifyWillich() {
+		Assert.assertTrue(location.contentEquals("Willich"));
+	}
+
+	@Then("^the bank name is Volksbank Willich$")
+	public void verifyVolksbankWillich() {
+		Assert.assertTrue(bankName.contentEquals("Volksbank Willich"));
+	}
+
+	@Then("^I verify the location Erkelenz$")
+	public void verifyErkelenz() {
+		Assert.assertTrue(location.contentEquals("Erkelenz"));
+	}
+	
+	@Then("^the bank name is Volksbank Erkelenz-Hückelhoven-Wegberg$")
+	public void verifyVolksbankErkelenzHückelhovenWegberg()  {
+		Assert.assertTrue(bankName.contentEquals("Volksbank Erkelenz-Hückelhoven-Wegberg"));
+}
+
+	@Then("^I verify the location Solingen$")
+	public void verifySolingen() {
+		Assert.assertTrue(location.contentEquals("Solingen"));
+}
+
+	@Then("^the bank name is Deutsche Bank$")
+	public void verifyDeutscheBank() {
+		Assert.assertTrue(bankName.contentEquals("Deutsche Bank"));
+}
+
 }
