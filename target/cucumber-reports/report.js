@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 692093278,
+  "duration": 1586617485,
   "status": "passed"
 });
 formatter.background({
@@ -31,15 +31,15 @@ formatter.match({
   "location": "OnlineShopStepDef.setUp()"
 });
 formatter.result({
-  "duration": 163981196,
-  "error_message": "java.lang.NullPointerException\r\n\tat com.examples.test.training.glue.OnlineShopStepDef.setUp(OnlineShopStepDef.java:20)\r\n\tat ✽.Given I have an existing account with an online bookshop(OnlineShop.feature:5)\r\n",
-  "status": "failed"
+  "duration": 22352105893,
+  "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4917380421,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 8,
@@ -51,21 +51,16 @@ formatter.scenario({
 });
 formatter.step({
   "line": 9,
-  "name": "I extend the Категории menu",
+  "name": "I extend the Категории menu and choose book category",
   "keyword": "And "
 });
 formatter.step({
   "line": 10,
-  "name": "I choose random book category",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
   "name": "I choose a book from the list",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 11,
   "name": "The book description will be loaded with price and an option to order",
   "keyword": "Then "
 });
@@ -73,28 +68,25 @@ formatter.match({
   "location": "OnlineShopStepDef.extendCategories()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "OnlineShopStepDef.chooseRandomBookCategory()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 7625660972,
+  "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.chooseBookFromList()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7201251697,
+  "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.bookDetailsValidation()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1872120689,
+  "status": "passed"
 });
 formatter.before({
-  "duration": 51714,
+  "duration": 55661,
   "status": "passed"
 });
 formatter.background({
@@ -118,18 +110,18 @@ formatter.match({
   "location": "OnlineShopStepDef.setUp()"
 });
 formatter.result({
-  "duration": 242382,
-  "error_message": "java.lang.NullPointerException\r\n\tat com.examples.test.training.glue.OnlineShopStepDef.setUp(OnlineShopStepDef.java:20)\r\n\tat ✽.Given I have an existing account with an online bookshop(OnlineShop.feature:5)\r\n",
-  "status": "failed"
+  "duration": 14454078851,
+  "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4557117655,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 14,
+  "line": 13,
   "name": "Search for a product",
   "description": "",
   "id": "online-bookshop;search-for-a-product",
@@ -137,17 +129,17 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 15,
+  "line": 14,
   "name": "I search for a specific book",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 15,
   "name": "I will be able to select the book from the search results",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 17,
+  "line": 16,
   "name": "The book description will be loaded with price and an option to order",
   "keyword": "And "
 });
@@ -155,22 +147,25 @@ formatter.match({
   "location": "OnlineShopStepDef.bookSearch()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1368405034,
+  "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.selectBookFromSearch()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2527873627,
+  "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.bookDetailsValidation()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2276272195,
+  "status": "passed"
 });
 formatter.before({
-  "duration": 52108,
+  "duration": 120796,
   "status": "passed"
 });
 formatter.background({
@@ -194,18 +189,18 @@ formatter.match({
   "location": "OnlineShopStepDef.setUp()"
 });
 formatter.result({
-  "duration": 328438,
-  "error_message": "java.lang.NullPointerException\r\n\tat com.examples.test.training.glue.OnlineShopStepDef.setUp(OnlineShopStepDef.java:20)\r\n\tat ✽.Given I have an existing account with an online bookshop(OnlineShop.feature:5)\r\n",
-  "status": "failed"
+  "duration": 12883285614,
+  "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4231974486,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 19,
+  "line": 18,
   "name": "Add a book to the basket",
   "description": "",
   "id": "online-bookshop;add-a-book-to-the-basket",
@@ -213,17 +208,17 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 20,
+  "line": 19,
   "name": "I search and load a specific book",
   "keyword": "And "
 });
 formatter.step({
-  "line": 21,
+  "line": 20,
   "name": "I click on the Add to basket option",
   "keyword": "And "
 });
 formatter.step({
-  "line": 22,
+  "line": 21,
   "name": "The book will be added to the basket",
   "keyword": "Then "
 });
@@ -231,22 +226,25 @@ formatter.match({
   "location": "OnlineShopStepDef.searchBook()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4430407614,
+  "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.addToBasket()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 274797776,
+  "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.basketValidation()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2081413990,
+  "status": "passed"
 });
 formatter.before({
-  "duration": 43423,
+  "duration": 61582,
   "status": "passed"
 });
 formatter.background({
@@ -270,18 +268,18 @@ formatter.match({
   "location": "OnlineShopStepDef.setUp()"
 });
 formatter.result({
-  "duration": 237250,
-  "error_message": "java.lang.NullPointerException\r\n\tat com.examples.test.training.glue.OnlineShopStepDef.setUp(OnlineShopStepDef.java:20)\r\n\tat ✽.Given I have an existing account with an online bookshop(OnlineShop.feature:5)\r\n",
-  "status": "failed"
+  "duration": 13187910869,
+  "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4579402898,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 24,
+  "line": 23,
   "name": "Edit the basket",
   "description": "",
   "id": "online-bookshop;edit-the-basket",
@@ -289,22 +287,22 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 25,
+  "line": 24,
   "name": "I add a book to the basket",
   "keyword": "And "
 });
 formatter.step({
-  "line": 26,
+  "line": 25,
   "name": "I load the added products",
   "keyword": "And "
 });
 formatter.step({
-  "line": 27,
+  "line": 26,
   "name": "I will be able to increase the quantity",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 28,
+  "line": 27,
   "name": "I will be able to remove the products from the basket",
   "keyword": "And "
 });
@@ -312,25 +310,29 @@ formatter.match({
   "location": "OnlineShopStepDef.addAbookToBasket()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4485771164,
+  "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.loadBasket()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1054037954,
+  "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.increaseQuantity()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1123092878,
+  "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.emptyBasket()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2637029197,
+  "status": "passed"
 });
 formatter.uri("SOAPService.feature");
 formatter.feature({
@@ -418,7 +420,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 42634,
+  "duration": 52108,
   "status": "passed"
 });
 formatter.scenario({
@@ -463,25 +465,25 @@ formatter.match({
   "location": "SOAPStepDefs.runRequest(String)"
 });
 formatter.result({
-  "duration": 2728797856,
+  "duration": 2399768514,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyViersen()"
 });
 formatter.result({
-  "duration": 2086690,
+  "duration": 166193,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyVolksbankViersen()"
 });
 formatter.result({
-  "duration": 84083,
+  "duration": 71451,
   "status": "passed"
 });
 formatter.before({
-  "duration": 44213,
+  "duration": 50529,
   "status": "passed"
 });
 formatter.scenario({
@@ -526,25 +528,25 @@ formatter.match({
   "location": "SOAPStepDefs.runRequest(String)"
 });
 formatter.result({
-  "duration": 196285013,
+  "duration": 226408406,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyWillich()"
 });
 formatter.result({
-  "duration": 83294,
+  "duration": 86847,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyVolksbankWillich()"
 });
 formatter.result({
-  "duration": 55661,
+  "duration": 65530,
   "status": "passed"
 });
 formatter.before({
-  "duration": 37897,
+  "duration": 38292,
   "status": "passed"
 });
 formatter.scenario({
@@ -589,25 +591,25 @@ formatter.match({
   "location": "SOAPStepDefs.runRequest(String)"
 });
 formatter.result({
-  "duration": 208817388,
+  "duration": 205996682,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyErkelenz()"
 });
 formatter.result({
-  "duration": 121586,
+  "duration": 99084,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyVolksbankErkelenzHückelhovenWegberg()"
 });
 formatter.result({
-  "duration": 67109,
+  "duration": 79741,
   "status": "passed"
 });
 formatter.before({
-  "duration": 43423,
+  "duration": 65135,
   "status": "passed"
 });
 formatter.scenario({
@@ -652,21 +654,21 @@ formatter.match({
   "location": "SOAPStepDefs.runRequest(String)"
 });
 formatter.result({
-  "duration": 199437944,
+  "duration": 202369650,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifySolingen()"
 });
 formatter.result({
-  "duration": 62371,
+  "duration": 86452,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyDeutscheBank()"
 });
 formatter.result({
-  "duration": 99084,
+  "duration": 82504,
   "status": "passed"
 });
 formatter.uri("UserRegistration.feature");
@@ -678,7 +680,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 63162,
+  "duration": 44213,
   "status": "passed"
 });
 formatter.scenario({
@@ -708,25 +710,25 @@ formatter.match({
   "location": "UserRegStepDefs.generateUsernamePassword()"
 });
 formatter.result({
-  "duration": 7463291,
+  "duration": 5774117,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegStepDefs.enterNewRegData()"
 });
 formatter.result({
-  "duration": 10079645539,
+  "duration": 12009491154,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegStepDefs.accountCreatedSuccessfully()"
 });
 formatter.result({
-  "duration": 12105363613,
+  "duration": 16723458976,
   "status": "passed"
 });
 formatter.before({
-  "duration": 57635,
+  "duration": 57240,
   "status": "passed"
 });
 formatter.scenario({
@@ -756,21 +758,21 @@ formatter.match({
   "location": "UserRegStepDefs.generateCredentials()"
 });
 formatter.result({
-  "duration": 136981,
+  "duration": 144086,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegStepDefs.enterInvalidUsername()"
 });
 formatter.result({
-  "duration": 8164327003,
+  "duration": 10707898031,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegStepDefs.loginFailed()"
 });
 formatter.result({
-  "duration": 8123417860,
+  "duration": 10262496739,
   "status": "passed"
 });
 formatter.uri("restAPI.feature");
@@ -782,7 +784,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 67899,
+  "duration": 60398,
   "status": "passed"
 });
 formatter.scenario({
@@ -817,14 +819,14 @@ formatter.match({
   "location": "RestApiStepsDef.setUp()"
 });
 formatter.result({
-  "duration": 658523471,
+  "duration": 748274613,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.postJson()"
 });
 formatter.result({
-  "duration": 592908808,
+  "duration": 619062601,
   "error_message": "io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document\r\n\tat io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:930)\r\n\tat io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)\r\n\tat io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:974)\r\n\tat io.restassured.path.json.JsonPath.get(JsonPath.java:201)\r\n\tat io.restassured.path.json.JsonPath.getString(JsonPath.java:351)\r\n\tat com.examples.test.training.implementation.RestApiImplementation.postJson(RestApiImplementation.java:49)\r\n\tat com.examples.test.training.glue.RestApiStepsDef.postJson(RestApiStepsDef.java:21)\r\n\tat ✽.When I send my json to the POST endpoint(restAPI.feature:7)\r\nCaused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading \u0027\u003c\u0027, no possible valid JSON value or punctuation could be recognized.\r\n\tat groovy.json.JsonLexer.nextToken(JsonLexer.java:85)\r\n\tat groovy.json.JsonLexer$nextToken.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)\r\n\tat io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)\r\n\tat io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)\r\n\tat io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:893)\r\n\tat io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:928)\r\n\tat io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)\r\n\tat io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:974)\r\n\tat io.restassured.path.json.JsonPath.get(JsonPath.java:201)\r\n\tat io.restassured.path.json.JsonPath.getString(JsonPath.java:351)\r\n\tat com.examples.test.training.implementation.RestApiImplementation.postJson(RestApiImplementation.java:49)\r\n\tat com.examples.test.training.glue.RestApiStepsDef.postJson(RestApiStepsDef.java:21)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
   "status": "failed"
 });
@@ -847,7 +849,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.before({
-  "duration": 41844,
+  "duration": 53687,
   "status": "passed"
 });
 formatter.scenario({
@@ -877,25 +879,25 @@ formatter.match({
   "location": "RestApiStepsDef.dbQuerySetUp()"
 });
 formatter.result({
-  "duration": 142508,
+  "duration": 168561,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.getEmployee()"
 });
 formatter.result({
-  "duration": 16463372,
+  "duration": 25942671,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.retrieveInformation()"
 });
 formatter.result({
-  "duration": 10250280,
+  "duration": 16342564,
   "status": "passed"
 });
 formatter.before({
-  "duration": 65135,
+  "duration": 145666,
   "status": "passed"
 });
 formatter.scenario({
@@ -925,21 +927,21 @@ formatter.match({
   "location": "RestApiStepsDef.dbQuerySetUp()"
 });
 formatter.result({
-  "duration": 89610,
+  "duration": 112111,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.deleteEmployee()"
 });
 formatter.result({
-  "duration": 6129010,
+  "duration": 10062368,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.validateDeletedEntry()"
 });
 formatter.result({
-  "duration": 4835782,
+  "duration": 8816513,
   "status": "passed"
 });
 });

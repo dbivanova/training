@@ -1,48 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.examples.test.training.runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 63, Failures: 0, Errors: 10, Skipped: 20, Time elapsed: 45.287 sec <<< FAILURE!
-Given I have an existing account with an online bookshop(Scenario: Choose a product from random category)  Time elapsed: 0.007 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.examples.test.training.glue.OnlineShopStepDef.setUp(OnlineShopStepDef.java:20)
-	at ?.Given I have an existing account with an online bookshop(OnlineShop.feature:5)
-
-Scenario: Choose a product from random category  Time elapsed: 0.008 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.examples.test.training.glue.OnlineShopStepDef.setUp(OnlineShopStepDef.java:20)
-	at ?.Given I have an existing account with an online bookshop(OnlineShop.feature:5)
-
-Given I have an existing account with an online bookshop(Scenario: Search for a product)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.examples.test.training.glue.OnlineShopStepDef.setUp(OnlineShopStepDef.java:20)
-	at ?.Given I have an existing account with an online bookshop(OnlineShop.feature:5)
-
-Scenario: Search for a product  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.examples.test.training.glue.OnlineShopStepDef.setUp(OnlineShopStepDef.java:20)
-	at ?.Given I have an existing account with an online bookshop(OnlineShop.feature:5)
-
-Given I have an existing account with an online bookshop(Scenario: Add a book to the basket)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.examples.test.training.glue.OnlineShopStepDef.setUp(OnlineShopStepDef.java:20)
-	at ?.Given I have an existing account with an online bookshop(OnlineShop.feature:5)
-
-Scenario: Add a book to the basket  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.examples.test.training.glue.OnlineShopStepDef.setUp(OnlineShopStepDef.java:20)
-	at ?.Given I have an existing account with an online bookshop(OnlineShop.feature:5)
-
-Given I have an existing account with an online bookshop(Scenario: Edit the basket)  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.examples.test.training.glue.OnlineShopStepDef.setUp(OnlineShopStepDef.java:20)
-	at ?.Given I have an existing account with an online bookshop(OnlineShop.feature:5)
-
-Scenario: Edit the basket  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.examples.test.training.glue.OnlineShopStepDef.setUp(OnlineShopStepDef.java:20)
-	at ?.Given I have an existing account with an online bookshop(OnlineShop.feature:5)
-
-When I send my json to the POST endpoint(Scenario: Create an entry in the DB)  Time elapsed: 0.001 sec  <<< ERROR!
+Tests run: 62, Failures: 0, Errors: 2, Skipped: 2, Time elapsed: 179.19 sec <<< FAILURE!
+When I send my json to the POST endpoint(Scenario: Create an entry in the DB)  Time elapsed: 0.007 sec  <<< ERROR!
 io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
 	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:930)
 	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)
@@ -117,7 +77,7 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Scenario: Create an entry in the DB  Time elapsed: 0.001 sec  <<< ERROR!
+Scenario: Create an entry in the DB  Time elapsed: 0.008 sec  <<< ERROR!
 io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
 	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:930)
 	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)
