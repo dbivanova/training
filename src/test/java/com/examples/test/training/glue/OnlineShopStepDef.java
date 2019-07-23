@@ -7,6 +7,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
+import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Convert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -133,12 +134,12 @@ float totalPrice = 0.00f;
 
 	@Then("^I will be able to increase the quantity$")
 	public void increaseQuantity() throws Throwable {
-		//String price = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/form/table/tbody/tr[4]/td[3]")).getText();
-		//System.out.println(price);
+	//	unitPrice = (driver.findElement(By.className("price")).getText());
 		WebElement quantity = driver.findElement(By.name("quantity[bvar1171]"));
 		quantity.clear();
 		quantity.sendKeys("5");
 		driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/form/table/tbody/tr[4]/td[2]/a")).click();
+		
 		
 		}
 

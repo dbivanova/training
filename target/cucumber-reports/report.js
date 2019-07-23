@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 1586617485,
+  "duration": 416069234,
   "status": "passed"
 });
 formatter.background({
@@ -31,14 +31,14 @@ formatter.match({
   "location": "OnlineShopStepDef.setUp()"
 });
 formatter.result({
-  "duration": 22352105893,
+  "duration": 12243443375,
   "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.login()"
 });
 formatter.result({
-  "duration": 4917380421,
+  "duration": 3924370786,
   "status": "passed"
 });
 formatter.scenario({
@@ -68,25 +68,25 @@ formatter.match({
   "location": "OnlineShopStepDef.extendCategories()"
 });
 formatter.result({
-  "duration": 7625660972,
+  "duration": 7289819481,
   "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.chooseBookFromList()"
 });
 formatter.result({
-  "duration": 7201251697,
+  "duration": 6721755597,
   "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.bookDetailsValidation()"
 });
 formatter.result({
-  "duration": 1872120689,
+  "duration": 1370341319,
   "status": "passed"
 });
 formatter.before({
-  "duration": 55661,
+  "duration": 30792,
   "status": "passed"
 });
 formatter.background({
@@ -110,14 +110,14 @@ formatter.match({
   "location": "OnlineShopStepDef.setUp()"
 });
 formatter.result({
-  "duration": 14454078851,
+  "duration": 10677345382,
   "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.login()"
 });
 formatter.result({
-  "duration": 4557117655,
+  "duration": 4434995092,
   "status": "passed"
 });
 formatter.scenario({
@@ -147,25 +147,25 @@ formatter.match({
   "location": "OnlineShopStepDef.bookSearch()"
 });
 formatter.result({
-  "duration": 1368405034,
+  "duration": 1181987533,
   "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.selectBookFromSearch()"
 });
 formatter.result({
-  "duration": 2527873627,
+  "duration": 2424237950,
   "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.bookDetailsValidation()"
 });
 formatter.result({
-  "duration": 2276272195,
+  "duration": 1148899752,
   "status": "passed"
 });
 formatter.before({
-  "duration": 120796,
+  "duration": 29212,
   "status": "passed"
 });
 formatter.background({
@@ -189,14 +189,14 @@ formatter.match({
   "location": "OnlineShopStepDef.setUp()"
 });
 formatter.result({
-  "duration": 12883285614,
+  "duration": 11732779199,
   "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.login()"
 });
 formatter.result({
-  "duration": 4231974486,
+  "duration": 4081772430,
   "status": "passed"
 });
 formatter.scenario({
@@ -226,25 +226,25 @@ formatter.match({
   "location": "OnlineShopStepDef.searchBook()"
 });
 formatter.result({
-  "duration": 4430407614,
+  "duration": 4122540217,
   "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.addToBasket()"
 });
 formatter.result({
-  "duration": 274797776,
+  "duration": 239141307,
   "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.basketValidation()"
 });
 formatter.result({
-  "duration": 2081413990,
+  "duration": 1013575709,
   "status": "passed"
 });
 formatter.before({
-  "duration": 61582,
+  "duration": 31186,
   "status": "passed"
 });
 formatter.background({
@@ -268,14 +268,14 @@ formatter.match({
   "location": "OnlineShopStepDef.setUp()"
 });
 formatter.result({
-  "duration": 13187910869,
+  "duration": 11403967549,
   "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.login()"
 });
 formatter.result({
-  "duration": 4579402898,
+  "duration": 3830684971,
   "status": "passed"
 });
 formatter.scenario({
@@ -310,29 +310,193 @@ formatter.match({
   "location": "OnlineShopStepDef.addAbookToBasket()"
 });
 formatter.result({
-  "duration": 4485771164,
+  "duration": 4109934822,
   "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.loadBasket()"
 });
 formatter.result({
-  "duration": 1054037954,
+  "duration": 1045907925,
   "status": "passed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.increaseQuantity()"
 });
 formatter.result({
-  "duration": 1123092878,
-  "status": "passed"
+  "duration": 536870,
+  "error_message": "java.lang.Error: Unresolved compilation problem: \n\tThe method toDecimal(String) is undefined for the type Convert\n\r\n\tat com.examples.test.training.glue.OnlineShopStepDef.increaseQuantity(OnlineShopStepDef.java:137)\r\n\tat ✽.Then I will be able to increase the quantity(OnlineShop.feature:26)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "OnlineShopStepDef.emptyBasket()"
 });
 formatter.result({
-  "duration": 2637029197,
+  "status": "skipped"
+});
+formatter.uri("RestApiAuthors.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Authors REST API",
+  "description": "I want to get, create,edit and delete an entry in the sample DB",
+  "id": "authors-rest-api",
+  "keyword": "Feature"
+});
+formatter.before({
+  "duration": 48161,
   "status": "passed"
+});
+formatter.scenario({
+  "line": 4,
+  "name": "Get list of all authors",
+  "description": "",
+  "id": "authors-rest-api;get-list-of-all-authors",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 5,
+  "name": "I send GET request to the authors endpoint",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 6,
+  "name": "The response code will be 200",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 7,
+  "name": "The service will return a list of existing entries",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.before({
+  "duration": 48950,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 9,
+  "name": "Get author by authorID",
+  "description": "",
+  "id": "authors-rest-api;get-author-by-authorid",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 10,
+  "name": "I send GET request using the author\u0027s ID",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "The response code will be 200",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "The service will return the entry that corresponds to the authorID",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.before({
+  "duration": 42634,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 14,
+  "name": "Get authorID by bookID",
+  "description": "",
+  "id": "authors-rest-api;get-authorid-by-bookid",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 15,
+  "name": "I send GET request using a book\u0027s ID",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 16,
+  "name": "The response code will be 200",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 17,
+  "name": "The service will return the entry that corresponds to the bookID",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.before({
+  "duration": 49740,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 19,
+  "name": "Create an Author entry",
+  "description": "",
+  "id": "authors-rest-api;create-an-author-entry",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 20,
+  "name": "I send POST request to the authors endpoint",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 21,
+  "name": "The response code will be 200",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
+  "name": "The service will return new author ID",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.uri("SOAPService.feature");
 formatter.feature({
@@ -420,7 +584,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 52108,
+  "duration": 33949,
   "status": "passed"
 });
 formatter.scenario({
@@ -465,25 +629,25 @@ formatter.match({
   "location": "SOAPStepDefs.runRequest(String)"
 });
 formatter.result({
-  "duration": 2399768514,
+  "duration": 1769426903,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyViersen()"
 });
 formatter.result({
-  "duration": 166193,
+  "duration": 128296,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyVolksbankViersen()"
 });
 formatter.result({
-  "duration": 71451,
+  "duration": 41055,
   "status": "passed"
 });
 formatter.before({
-  "duration": 50529,
+  "duration": 31186,
   "status": "passed"
 });
 formatter.scenario({
@@ -528,21 +692,21 @@ formatter.match({
   "location": "SOAPStepDefs.runRequest(String)"
 });
 formatter.result({
-  "duration": 226408406,
+  "duration": 194388049,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyWillich()"
 });
 formatter.result({
-  "duration": 86847,
+  "duration": 67898,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyVolksbankWillich()"
 });
 formatter.result({
-  "duration": 65530,
+  "duration": 64740,
   "status": "passed"
 });
 formatter.before({
@@ -591,25 +755,25 @@ formatter.match({
   "location": "SOAPStepDefs.runRequest(String)"
 });
 formatter.result({
-  "duration": 205996682,
+  "duration": 177638489,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyErkelenz()"
 });
 formatter.result({
-  "duration": 99084,
+  "duration": 56845,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyVolksbankErkelenzHückelhovenWegberg()"
 });
 formatter.result({
-  "duration": 79741,
+  "duration": 33160,
   "status": "passed"
 });
 formatter.before({
-  "duration": 65135,
+  "duration": 32765,
   "status": "passed"
 });
 formatter.scenario({
@@ -654,21 +818,21 @@ formatter.match({
   "location": "SOAPStepDefs.runRequest(String)"
 });
 formatter.result({
-  "duration": 202369650,
+  "duration": 180815103,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifySolingen()"
 });
 formatter.result({
-  "duration": 86452,
+  "duration": 52108,
   "status": "passed"
 });
 formatter.match({
   "location": "SOAPStepDefs.verifyDeutscheBank()"
 });
 formatter.result({
-  "duration": 82504,
+  "duration": 32370,
   "status": "passed"
 });
 formatter.uri("UserRegistration.feature");
@@ -680,7 +844,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 44213,
+  "duration": 32765,
   "status": "passed"
 });
 formatter.scenario({
@@ -710,25 +874,25 @@ formatter.match({
   "location": "UserRegStepDefs.generateUsernamePassword()"
 });
 formatter.result({
-  "duration": 5774117,
+  "duration": 5009077,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegStepDefs.enterNewRegData()"
 });
 formatter.result({
-  "duration": 12009491154,
+  "duration": 7575468350,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegStepDefs.accountCreatedSuccessfully()"
 });
 formatter.result({
-  "duration": 16723458976,
+  "duration": 9857361496,
   "status": "passed"
 });
 formatter.before({
-  "duration": 57240,
+  "duration": 43029,
   "status": "passed"
 });
 formatter.scenario({
@@ -758,21 +922,21 @@ formatter.match({
   "location": "UserRegStepDefs.generateCredentials()"
 });
 formatter.result({
-  "duration": 144086,
+  "duration": 73820,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegStepDefs.enterInvalidUsername()"
 });
 formatter.result({
-  "duration": 10707898031,
+  "duration": 6063240540,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegStepDefs.loginFailed()"
 });
 formatter.result({
-  "duration": 10262496739,
+  "duration": 6245639016,
   "status": "passed"
 });
 formatter.uri("restAPI.feature");
@@ -784,7 +948,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 60398,
+  "duration": 34738,
   "status": "passed"
 });
 formatter.scenario({
@@ -819,14 +983,14 @@ formatter.match({
   "location": "RestApiStepsDef.setUp()"
 });
 formatter.result({
-  "duration": 748274613,
+  "duration": 530372047,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.postJson()"
 });
 formatter.result({
-  "duration": 619062601,
+  "duration": 525316783,
   "error_message": "io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document\r\n\tat io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:930)\r\n\tat io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)\r\n\tat io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:974)\r\n\tat io.restassured.path.json.JsonPath.get(JsonPath.java:201)\r\n\tat io.restassured.path.json.JsonPath.getString(JsonPath.java:351)\r\n\tat com.examples.test.training.implementation.RestApiImplementation.postJson(RestApiImplementation.java:49)\r\n\tat com.examples.test.training.glue.RestApiStepsDef.postJson(RestApiStepsDef.java:21)\r\n\tat ✽.When I send my json to the POST endpoint(restAPI.feature:7)\r\nCaused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading \u0027\u003c\u0027, no possible valid JSON value or punctuation could be recognized.\r\n\tat groovy.json.JsonLexer.nextToken(JsonLexer.java:85)\r\n\tat groovy.json.JsonLexer$nextToken.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)\r\n\tat io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)\r\n\tat io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)\r\n\tat io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:893)\r\n\tat io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:928)\r\n\tat io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)\r\n\tat io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:974)\r\n\tat io.restassured.path.json.JsonPath.get(JsonPath.java:201)\r\n\tat io.restassured.path.json.JsonPath.getString(JsonPath.java:351)\r\n\tat com.examples.test.training.implementation.RestApiImplementation.postJson(RestApiImplementation.java:49)\r\n\tat com.examples.test.training.glue.RestApiStepsDef.postJson(RestApiStepsDef.java:21)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
   "status": "failed"
 });
@@ -849,7 +1013,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.before({
-  "duration": 53687,
+  "duration": 290147,
   "status": "passed"
 });
 formatter.scenario({
@@ -879,25 +1043,25 @@ formatter.match({
   "location": "RestApiStepsDef.dbQuerySetUp()"
 });
 formatter.result({
-  "duration": 168561,
+  "duration": 106584,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.getEmployee()"
 });
 formatter.result({
-  "duration": 25942671,
+  "duration": 12037340,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.retrieveInformation()"
 });
 formatter.result({
-  "duration": 16342564,
+  "duration": 6257300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 145666,
+  "duration": 41845,
   "status": "passed"
 });
 formatter.scenario({
@@ -927,21 +1091,21 @@ formatter.match({
   "location": "RestApiStepsDef.dbQuerySetUp()"
 });
 formatter.result({
-  "duration": 112111,
+  "duration": 39081,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.deleteEmployee()"
 });
 formatter.result({
-  "duration": 10062368,
+  "duration": 4799461,
   "status": "passed"
 });
 formatter.match({
   "location": "RestApiStepsDef.validateDeletedEntry()"
 });
 formatter.result({
-  "duration": 8816513,
+  "duration": 4960128,
   "status": "passed"
 });
 });
