@@ -40,7 +40,7 @@ public class RestApiAuthorsImplementation {
 		response = given()
 				  .contentType(ContentType.JSON)
 				  .baseUri(RestApiAuthorsConstants.BASE_URL)
-		          .pathParam("id", 33)
+		          .pathParam("id", "33")
 		          .when()
 		          .get("/{id}");
 
