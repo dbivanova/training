@@ -11,7 +11,8 @@ import org.junit.Assert;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import com.examples.test.training.implementation.PostJSON;
+import testData.PostJSONAuthors;
+
 public class RestApiAuthorsImplementation {
 
 	Response response = null;
@@ -65,25 +66,52 @@ public class RestApiAuthorsImplementation {
 		Assert.assertTrue(responseBody.contains("\"IDBook\":24"));
 
 	}
-	
+
 	public void postAuthor() {
-		
-		PostJSON requestBody = new PostJSON();
-	requestBody.setAuthorId(RandomUtils.nextInt(1, 500));
-	requestBody.setBookID(RandomUtils.nextInt(1, 500));
-	requestBody.setFirstName(RandomStringUtils.randomAlphabetic(5));
-	requestBody.setLastName(RandomStringUtils.randomAlphabetic(5));
 
-	response = RestAssured.given().body (requestBody)
-	.when ()
-	.contentType (ContentType.JSON)
-	.post (RestApiAuthorsConstants.BASE_URL);
-	
-	responseBody = response.getBody().asString();
+		PostJSONAuthors requestBody = new PostJSONAuthors();
+		requestBody.setAuthorId(RandomUtils.nextInt(1, 500));
+		requestBody.setBookID(RandomUtils.nextInt(1, 500));
+		requestBody.setFirstName(RandomStringUtils.randomAlphabetic(5));
+		requestBody.setLastName(RandomStringUtils.randomAlphabetic(5));
 
-			}
+		response = RestAssured.given().body(requestBody).when().contentType(ContentType.JSON)
+				.post(RestApiAuthorsConstants.BASE_URL);
+
+		responseBody = response.getBody().asString();
+
+	}
+
 	public void validateNewAuthor() {
 		Assert.assertTrue(responseBody.contains("ID"));
+
+	}
+
+	public void editExistingAuthor() {
+
+		PostJSONAuthors requestBody = new PostJSONAuthors();
+		requestBody.setAuthorId(42);
+		requestBody.setBookID(RandomUtils.nextInt(1, 500));
+		requestBody.setFirstName(RandomStringUtils.randomAlphabetic(5));
+		requestBody.setLastName(RandomStringUtils.randomAlphabetic(5));
+
+		response = RestAssured.given().body(requestBody).when().contentType(ContentType.JSON)
+				.put(RestApiAuthorsConstants.BASE_URL + "/42");
+
+		responseBody = response.getBody().asString();
+
+		System.out.println(responseBody);
+	}
+
+	public void validateEditedEntry() {
+
+		Assert.assertTrue(responseBody.contains("\"ID\":42"));
+
+	}
+
+	public void deleteAuthor() {
+
+		RestAssured.given().when().delete(RestApiAuthorsConstants.BASE_URL + "/123");
 
 	}
 }

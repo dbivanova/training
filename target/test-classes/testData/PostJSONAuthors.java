@@ -1,6 +1,6 @@
-package com.examples.test.training.implementation;
+package testData;
 
-public class PostJSON {
+public class PostJSONAuthors {
 
 	public  int ID;
 	public  int IDBook;

@@ -56,17 +56,17 @@ public class RestApiAuthorsStepDef {
 
 	@When("^I send PUT request to the authors endpoint changing the author's name$")
 	public void editEntry() throws Throwable {
-
+		operations.editExistingAuthor();
 	}
 
 	@Then("^The service will return the updated name in the details$")
 	public void verifyResponse() throws Throwable {
-
+		operations.validateEditedEntry();
 	}
 
 	@When("^I send DELETE request$")
 	public void deleteEntry() throws Throwable {
-
+		operations.deleteAuthor();
 	}
 
 }
