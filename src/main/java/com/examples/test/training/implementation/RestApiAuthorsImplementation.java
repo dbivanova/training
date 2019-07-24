@@ -4,17 +4,21 @@ import static io.restassured.RestAssured.given;
 
 import com.examples.test.training.constants.RestApiAuthorsConstants;
 
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.RandomUtils;
 import org.junit.Assert;
 
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-
+import com.examples.test.training.implementation.PostJSON;
 public class RestApiAuthorsImplementation {
 
 	Response response = null;
 	public static int statusCode;
 	public static String responseBody;
 	public static String id;
+	public static String bookId;
 
 	public void getAuthorsList() {
 
@@ -36,22 +40,50 @@ public class RestApiAuthorsImplementation {
 	}
 
 	public void getAuthor() {
+		response = RestAssured.given().pathParam("id", 33).when().get(RestApiAuthorsConstants.BASE_URL + "/{id}");
 
-		response = given()
-				  .contentType(ContentType.JSON)
-				  .baseUri(RestApiAuthorsConstants.BASE_URL)
-		          .pathParam("id", "33")
-		          .when()
-		          .get("/{id}");
-
-		
 		responseBody = response.getBody().asString();
-		System.out.println(responseBody);
 	}
 
 	public void verifyAuthor() {
 
-		Assert.assertTrue(responseBody.contains("First Name 33"));
+		Assert.assertTrue(responseBody.contains("\"ID\":33"));
+
+	}
+
+	public void getBookByID() {
+
+		response = RestAssured.given().pathParam("bookId", 24).when()
+				.get(RestApiAuthorsConstants.BOOKS_URL + "/{bookId}");
+
+		responseBody = response.getBody().asString();
+		System.out.println(responseBody);
+	}
+
+	public void verifyGetAuthorByBookID() {
+
+		Assert.assertTrue(responseBody.contains("\"IDBook\":24"));
+
+	}
+	
+	public void postAuthor() {
+		
+		PostJSON requestBody = new PostJSON();
+	requestBody.setAuthorId(RandomUtils.nextInt(1, 500));
+	requestBody.setBookID(RandomUtils.nextInt(1, 500));
+	requestBody.setFirstName(RandomStringUtils.randomAlphabetic(5));
+	requestBody.setLastName(RandomStringUtils.randomAlphabetic(5));
+
+	response = RestAssured.given().body (requestBody)
+	.when ()
+	.contentType (ContentType.JSON)
+	.post (RestApiAuthorsConstants.BASE_URL);
+	
+	responseBody = response.getBody().asString();
+
+			}
+	public void validateNewAuthor() {
+		Assert.assertTrue(responseBody.contains("ID"));
 
 	}
 }

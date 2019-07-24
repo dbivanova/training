@@ -36,37 +36,37 @@ public class RestApiAuthorsStepDef {
 
 	@When("^I send GET request using a book's ID$")
 	public void getBook() throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
+		operations.getBookByID();
 	}
 
 	@Then("^The service will return the entry that corresponds to the bookID$")
-	public void verifyBookEntry() throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
+	public void verifyGetAuthorByBook() throws Throwable {
+		operations.verifyGetAuthorByBookID();
 	}
 
 	@When("^I send POST request to the authors endpoint$")
 	public void createEntry() throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
+		operations.postAuthor();
 	}
 
 	@Then("^The service will return new author ID$")
 	public void verifyNewEntry() throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
+		operations.validateNewAuthor();
 	}
 
 	@When("^I send PUT request to the authors endpoint changing the author's name$")
 	public void editEntry() throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
+
 	}
 
 	@Then("^The service will return the updated name in the details$")
 	public void verifyResponse() throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
+
 	}
 
 	@When("^I send DELETE request$")
 	public void deleteEntry() throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
+
 	}
 
 }
