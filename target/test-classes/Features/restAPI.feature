@@ -8,12 +8,15 @@ Feature: Test REST API calls
 		Then I will see response 200
 		And The response body will contain new employee ID
 	
-	  
-  Scenario: Retrieve information from the DB
+	Scenario: Retrieve information from the DB
   	Given An employee entry exists in the DB
    	When I perform GET API call using the employee ID
   	Then The API call will return the employee name
-  	
+  
+  Scenario: Edit an entry in the DB
+  	When I perform PUT API call using the employee ID
+  	Then The API call will return the updated data
+  		
   Scenario: Delete an entry
   	Given An employee entry exists in the DB
   	When I perform DELETE API call using the employee ID

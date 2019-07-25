@@ -18,42 +18,52 @@ public class RestApiStepsDef {
 
 	@When("^I send my json to the POST endpoint$")
 	public void postJson() throws Throwable {
-	    apiCalls.postJson();
+		apiCalls.postJson();
 	}
 
 	@Then("^I will see response (\\d+)$")
 	public void validateResponse(int arg1) throws Throwable {
 		apiCalls.validateResponse();
-	    
+
 	}
 
 	@Then("^The response body will contain new employee ID$")
 	public void addedEntry() throws Throwable {
-	    apiCalls.validateID();
+		apiCalls.validateID();
 
 	}
 
 	@Given("^An employee entry exists in the DB$")
 	public void dbQuerySetUp() throws Throwable {
-	    apiCalls.newEmployeeID();
+		apiCalls.newEmployeeID();
 
 	}
 
 	@When("^I perform GET API call using the employee ID$")
 	public void getEmployee() throws Throwable {
-	    apiCalls.getExistingEmployee();
+		apiCalls.getExistingEmployee();
 
 	}
 
 	@Then("^The API call will return the employee name$")
 	public void retrieveInformation() throws Throwable {
 	    apiCalls.returnEmployeeName();
-
+	}    
+	    
+	@When("^I perform PUT API call using the employee ID$")
+	public void editEmployee() throws Throwable {
+	apiCalls.editEmployeeEntry();
 	}
+
+	@Then("^The API call will return the updated data$")
+	public void verifyUpdatedEmployee() throws Throwable {
+	apiCalls.verifyEditedEmployee();
+	}
+
 	@When("^I perform DELETE API call using the employee ID$")
 	public void deleteEmployee() throws Throwable {
 		apiCalls.deleteEmployee();
-		
+
 	}
 
 	@Then("^the user will no longer exist$")
@@ -61,5 +71,4 @@ public class RestApiStepsDef {
 		apiCalls.validateDeletedEntry();
 	}
 
-	
 }

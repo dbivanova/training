@@ -1,13 +1,10 @@
 package com.examples.test.training.glue;
 
-import static org.junit.Assert.assertTrue;
-
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
-import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Convert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
