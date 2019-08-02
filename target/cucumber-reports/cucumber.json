@@ -1,5 +1,689 @@
 [
   {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-08-02T11:58:43.749Z",
+        "before": [
+          {
+            "result": {
+              "duration": 216566655,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.openConnection()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Test for select operation",
+        "description": "",
+        "id": "db-connection-test;test-for-select-operation;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 38814983,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 53929481,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I send a select query using 1 to the DB",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 28
+                }
+              ],
+              "location": "DBConnectionStepDef.selectQuery(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2685539,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I will get title Die Hard in the response",
+            "match": {
+              "location": "DBConnectionStepDef.selectVerify()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DB"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-02T11:58:44.093Z",
+        "before": [
+          {
+            "result": {
+              "duration": 39197899,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.openConnection()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Test for select operation",
+        "description": "",
+        "id": "db-connection-test;test-for-select-operation;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 43762881,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 34930169,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I send a select query using 3 to the DB",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 28
+                }
+              ],
+              "location": "DBConnectionStepDef.selectQuery(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 579899,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I will get title LOTR: The Two Towers in the response",
+            "match": {
+              "location": "DBConnectionStepDef.anotherSelectVerify()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DB"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-02T11:58:44.219Z",
+        "before": [
+          {
+            "result": {
+              "duration": 37870328,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.openConnection()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Test for insert operation",
+        "description": "",
+        "id": "db-connection-test;test-for-insert-operation;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 29251969,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 63876596,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUpInsert()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 93834787,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I send new 9, 11 and 67 information to the DB via insert statement",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9",
+                  "offset": 11
+                },
+                {
+                  "val": "11",
+                  "offset": 14
+                },
+                {
+                  "val": "67",
+                  "offset": 21
+                }
+              ],
+              "location": "DBConnectionStepDef.insertStatement(int,int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37869933,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "New row will be added to the inventory table with inventory_id 9",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9",
+                  "offset": 63
+                }
+              ],
+              "location": "DBConnectionStepDef.newRowVerify(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DB"
+          },
+          {
+            "name": "@Insert"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-02T11:58:44.490Z",
+        "before": [
+          {
+            "result": {
+              "duration": 29770287,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.openConnection()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Test for insert operation",
+        "description": "",
+        "id": "db-connection-test;test-for-insert-operation;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 36168525,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 59454516,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUpInsert()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 34032095,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I send new 10, 12 and 22 information to the DB via insert statement",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 11
+                },
+                {
+                  "val": "12",
+                  "offset": 15
+                },
+                {
+                  "val": "22",
+                  "offset": 22
+                }
+              ],
+              "location": "DBConnectionStepDef.insertStatement(int,int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34362902,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "New row will be added to the inventory table with inventory_id 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 63
+                }
+              ],
+              "location": "DBConnectionStepDef.newRowVerify(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DB"
+          },
+          {
+            "name": "@Insert"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-02T11:58:44.688Z",
+        "before": [
+          {
+            "result": {
+              "duration": 34920300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.openConnection()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Test for update operation",
+        "description": "",
+        "id": "db-connection-test;test-for-update-operation;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 30232943,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 70307600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUpUpdate()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30544012,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I send an update query to change 33 where actor_id is 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "33",
+                  "offset": 33
+                },
+                {
+                  "val": "3",
+                  "offset": 54
+                }
+              ],
+              "location": "DBConnectionStepDef.updateQuery(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29856344,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "The rows in the DB will be successfully updated",
+            "match": {
+              "location": "DBConnectionStepDef.verifyUpdate()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DB"
+          },
+          {
+            "name": "@Update"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-02T11:58:44.892Z",
+        "before": [
+          {
+            "result": {
+              "duration": 28385080,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.openConnection()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Test for update operation",
+        "description": "",
+        "id": "db-connection-test;test-for-update-operation;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 29734758,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 66515948,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUpUpdate()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 32336213,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I send an update query to change 11 where actor_id is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11",
+                  "offset": 33
+                },
+                {
+                  "val": "1",
+                  "offset": 54
+                }
+              ],
+              "location": "DBConnectionStepDef.updateQuery(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35523490,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "The rows in the DB will be successfully updated",
+            "match": {
+              "location": "DBConnectionStepDef.verifyUpdate()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DB"
+          },
+          {
+            "name": "@Update"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-02T11:58:45.088Z",
+        "before": [
+          {
+            "result": {
+              "duration": 31770920,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.openConnection()"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "Test for delete operation",
+        "description": "",
+        "id": "db-connection-test;test-for-delete-operation;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 33351926,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUpDelete()"
+            }
+          },
+          {
+            "result": {
+              "duration": 30911532,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 35878773,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I send a delete query using the 6 to the film_category table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 32
+                }
+              ],
+              "location": "DBConnectionStepDef.deleteQuery(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31213916,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "An existing entry with id 6 will be successfully deleted",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 26
+                }
+              ],
+              "location": "DBConnectionStepDef.verifyDelete(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DB"
+          },
+          {
+            "name": "@Delete"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-02T11:58:45.258Z",
+        "before": [
+          {
+            "result": {
+              "duration": 32455036,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.openConnection()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Test for delete operation",
+        "description": "",
+        "id": "db-connection-test;test-for-delete-operation;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 34801083,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUpDelete()"
+            }
+          },
+          {
+            "result": {
+              "duration": 29691730,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBConnectionStepDef.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 34899378,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I send a delete query using the 7 to the film_category table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 32
+                }
+              ],
+              "location": "DBConnectionStepDef.deleteQuery(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33200734,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "An existing entry with id 7 will be successfully deleted",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 26
+                }
+              ],
+              "location": "DBConnectionStepDef.verifyDelete(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DB"
+          },
+          {
+            "name": "@Delete"
+          }
+        ]
+      }
+    ],
+    "name": "DB Connection test",
+    "description": "  I want to test my DB connection.",
+    "id": "db-connection-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/DBConnection.feature",
+    "tags": [
+      {
+        "name": "@DB",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
     "line": 1,
     "elements": [
       {
@@ -11,7 +695,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11951209557,
+              "duration": 12865475523,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +707,7 @@
           },
           {
             "result": {
-              "duration": 4067632612,
+              "duration": 3989060069,
               "status": "passed"
             },
             "line": 6,
@@ -36,17 +720,7 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 377812894,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T11:58:45.427Z",
         "line": 8,
         "name": "Choose a product from random category",
         "description": "",
@@ -56,7 +730,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7176346448,
+              "duration": 7429382713,
               "status": "passed"
             },
             "line": 9,
@@ -68,7 +742,7 @@
           },
           {
             "result": {
-              "duration": 6832853768,
+              "duration": 6559975793,
               "status": "passed"
             },
             "line": 10,
@@ -80,7 +754,7 @@
           },
           {
             "result": {
-              "duration": 1146209084,
+              "duration": 1192456015,
               "status": "passed"
             },
             "line": 11,
@@ -101,7 +775,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10972097753,
+              "duration": 11639771798,
               "status": "passed"
             },
             "line": 5,
@@ -113,7 +787,7 @@
           },
           {
             "result": {
-              "duration": 3868718668,
+              "duration": 3903089654,
               "status": "passed"
             },
             "line": 6,
@@ -126,17 +800,7 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 36317,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T11:59:17.471Z",
         "line": 13,
         "name": "Search for a product",
         "description": "",
@@ -146,7 +810,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1125806835,
+              "duration": 987224444,
               "status": "passed"
             },
             "line": 14,
@@ -158,7 +822,7 @@
           },
           {
             "result": {
-              "duration": 2263331255,
+              "duration": 1969497043,
               "status": "passed"
             },
             "line": 15,
@@ -170,7 +834,7 @@
           },
           {
             "result": {
-              "duration": 1100790265,
+              "duration": 1328248060,
               "status": "passed"
             },
             "line": 16,
@@ -191,7 +855,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10613251376,
+              "duration": 11555155008,
               "status": "passed"
             },
             "line": 5,
@@ -203,7 +867,7 @@
           },
           {
             "result": {
-              "duration": 4024537729,
+              "duration": 4135313203,
               "status": "passed"
             },
             "line": 6,
@@ -216,17 +880,7 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 31581,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T11:59:37.301Z",
         "line": 18,
         "name": "Add a book to the basket",
         "description": "",
@@ -236,7 +890,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4053601748,
+              "duration": 3918705493,
               "status": "passed"
             },
             "line": 19,
@@ -248,7 +902,7 @@
           },
           {
             "result": {
-              "duration": 227057782,
+              "duration": 258364431,
               "status": "passed"
             },
             "line": 20,
@@ -260,7 +914,7 @@
           },
           {
             "result": {
-              "duration": 1035330398,
+              "duration": 1402890103,
               "status": "passed"
             },
             "line": 21,
@@ -281,7 +935,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11494200421,
+              "duration": 11648552403,
               "status": "passed"
             },
             "line": 5,
@@ -293,7 +947,7 @@
           },
           {
             "result": {
-              "duration": 3804810198,
+              "duration": 4524709685,
               "status": "passed"
             },
             "line": 6,
@@ -306,17 +960,7 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 38687,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T11:59:58.576Z",
         "line": 23,
         "name": "Edit the basket",
         "description": "",
@@ -326,7 +970,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4188640380,
+              "duration": 4148467726,
               "status": "passed"
             },
             "line": 24,
@@ -338,7 +982,7 @@
           },
           {
             "result": {
-              "duration": 807003076,
+              "duration": 907887937,
               "status": "passed"
             },
             "line": 25,
@@ -350,7 +994,7 @@
           },
           {
             "result": {
-              "duration": 835763921,
+              "duration": 891084270,
               "status": "passed"
             },
             "line": 26,
@@ -362,7 +1006,7 @@
           },
           {
             "result": {
-              "duration": 1982806733,
+              "duration": 2041459074,
               "status": "passed"
             },
             "line": 27,
@@ -376,26 +1020,17 @@
       }
     ],
     "name": "Online Bookshop",
-    "description": "I want to create test scenarios about online bookshop operations",
+    "description": "  I want to create test scenarios about online bookshop operations",
     "id": "online-bookshop",
     "keyword": "Feature",
-    "uri": "OnlineShop.feature"
+    "uri": "file:src/test/resources/Features/OnlineShop.feature",
+    "tags": []
   },
   {
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 35529,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T12:00:22.745Z",
         "line": 4,
         "name": "Get list of all authors",
         "description": "",
@@ -405,7 +1040,7 @@
         "steps": [
           {
             "result": {
-              "duration": 958938513,
+              "duration": 1590507963,
               "status": "passed"
             },
             "line": 5,
@@ -417,7 +1052,7 @@
           },
           {
             "result": {
-              "duration": 1587320,
+              "duration": 574373,
               "status": "passed"
             },
             "line": 6,
@@ -435,7 +1070,7 @@
           },
           {
             "result": {
-              "duration": 46581,
+              "duration": 454762,
               "status": "passed"
             },
             "line": 7,
@@ -448,17 +1083,7 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 26449,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T12:00:24.336Z",
         "line": 9,
         "name": "Get author by authorID",
         "description": "",
@@ -468,7 +1093,7 @@
         "steps": [
           {
             "result": {
-              "duration": 108294210,
+              "duration": 137159882,
               "status": "passed"
             },
             "line": 10,
@@ -480,7 +1105,7 @@
           },
           {
             "result": {
-              "duration": 97111,
+              "duration": 405417,
               "status": "passed"
             },
             "line": 11,
@@ -498,7 +1123,7 @@
           },
           {
             "result": {
-              "duration": 39476,
+              "duration": 433444,
               "status": "passed"
             },
             "line": 12,
@@ -511,17 +1136,7 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 34739,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T12:00:24.486Z",
         "line": 14,
         "name": "Get authorID by bookID",
         "description": "",
@@ -531,7 +1146,7 @@
         "steps": [
           {
             "result": {
-              "duration": 103382243,
+              "duration": 131122845,
               "status": "passed"
             },
             "line": 15,
@@ -543,7 +1158,7 @@
           },
           {
             "result": {
-              "duration": 93163,
+              "duration": 416470,
               "status": "passed"
             },
             "line": 16,
@@ -561,7 +1176,7 @@
           },
           {
             "result": {
-              "duration": 68688,
+              "duration": 354098,
               "status": "passed"
             },
             "line": 17,
@@ -574,17 +1189,7 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 32765,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T12:00:24.620Z",
         "line": 19,
         "name": "Create an Author entry",
         "description": "",
@@ -594,7 +1199,7 @@
         "steps": [
           {
             "result": {
-              "duration": 455137985,
+              "duration": 592093706,
               "status": "passed"
             },
             "line": 20,
@@ -606,7 +1211,7 @@
           },
           {
             "result": {
-              "duration": 88821,
+              "duration": 527397,
               "status": "passed"
             },
             "line": 21,
@@ -624,7 +1229,7 @@
           },
           {
             "result": {
-              "duration": 33160,
+              "duration": 354887,
               "status": "passed"
             },
             "line": 22,
@@ -637,17 +1242,7 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 31580,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T12:00:25.215Z",
         "line": 24,
         "name": "Edit an Author entry",
         "description": "",
@@ -657,7 +1252,7 @@
         "steps": [
           {
             "result": {
-              "duration": 115497349,
+              "duration": 122959643,
               "status": "passed"
             },
             "line": 25,
@@ -669,7 +1264,7 @@
           },
           {
             "result": {
-              "duration": 88031,
+              "duration": 419627,
               "status": "passed"
             },
             "line": 26,
@@ -687,7 +1282,7 @@
           },
           {
             "result": {
-              "duration": 50923,
+              "duration": 324096,
               "status": "passed"
             },
             "line": 27,
@@ -700,17 +1295,7 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 24869,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T12:00:25.331Z",
         "line": 29,
         "name": "Delete an Author entry",
         "description": "",
@@ -720,7 +1305,7 @@
         "steps": [
           {
             "result": {
-              "duration": 105828160,
+              "duration": 123577045,
               "status": "passed"
             },
             "line": 30,
@@ -732,7 +1317,7 @@
           },
           {
             "result": {
-              "duration": 101453,
+              "duration": 394758,
               "status": "passed"
             },
             "line": 31,
@@ -752,91 +1337,21 @@
       }
     ],
     "name": "Authors REST API",
-    "description": "I want to get, create,edit and delete an entry in the sample DB",
+    "description": "  I want to get, create,edit and delete an entry in the sample DB",
     "id": "authors-rest-api",
     "keyword": "Feature",
-    "uri": "RestApiAuthors.feature"
+    "uri": "file:src/test/resources/Features/RestApiAuthors.feature",
+    "tags": []
   },
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
+        "start_timestamp": "2019-08-02T12:00:25.456Z",
         "before": [
           {
             "result": {
-              "duration": 28817,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
-        "line": 10,
-        "name": "Find bank branches in Germany using BLZ codes",
-        "description": "",
-        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 632819899,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "I run a SOAP request using code 31460290",
-            "match": {
-              "arguments": [
-                {
-                  "val": "31460290",
-                  "offset": 32
-                }
-              ],
-              "location": "SOAPStepDefs.runRequest(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 75794,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I verify the location Viersen",
-            "match": {
-              "location": "SOAPStepDefs.verifyViersen()"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 28422,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the bank name is Volksbank Viersen",
-            "match": {
-              "location": "SOAPStepDefs.verifyVolksbankViersen()"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 30396,
+              "duration": 5037903,
               "status": "passed"
             },
             "match": {
@@ -847,68 +1362,65 @@
         "line": 11,
         "name": "Find bank branches in Germany using BLZ codes",
         "description": "",
-        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;3",
+        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 172379926,
+              "duration": 821590662,
               "status": "passed"
             },
-            "line": 4,
-            "name": "I run a SOAP request using code 31061108",
+            "line": 5,
+            "name": "I run a SOAP request using code 31460290",
             "match": {
               "arguments": [
                 {
-                  "val": "31061108",
+                  "val": "31460290",
                   "offset": 32
                 }
               ],
               "location": "SOAPStepDefs.runRequest(String)"
             },
-            "matchedColumns": [
-              0
-            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 51318,
+              "duration": 390416,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I verify the location Willich",
+            "line": 6,
+            "name": "I verify the location Viersen",
             "match": {
-              "location": "SOAPStepDefs.verifyWillich()"
+              "location": "SOAPStepDefs.verifyViersen()"
             },
-            "matchedColumns": [
-              1
-            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 36713,
+              "duration": 414891,
               "status": "passed"
             },
-            "line": 6,
-            "name": "the bank name is Volksbank Willich",
+            "line": 7,
+            "name": "the bank name is Volksbank Viersen",
             "match": {
-              "location": "SOAPStepDefs.verifyVolksbankWillich()"
+              "location": "SOAPStepDefs.verifyVolksbankViersen()"
             },
-            "matchedColumns": [
-              2
-            ],
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SOAP"
           }
         ]
       },
       {
+        "start_timestamp": "2019-08-02T12:00:26.303Z",
         "before": [
           {
             "result": {
-              "duration": 24080,
+              "duration": 106585,
               "status": "passed"
             },
             "match": {
@@ -919,68 +1431,65 @@
         "line": 12,
         "name": "Find bank branches in Germany using BLZ codes",
         "description": "",
-        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;4",
+        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 172926270,
+              "duration": 182790364,
               "status": "passed"
             },
-            "line": 4,
-            "name": "I run a SOAP request using code 31261282",
+            "line": 5,
+            "name": "I run a SOAP request using code 31061108",
             "match": {
               "arguments": [
                 {
-                  "val": "31261282",
+                  "val": "31061108",
                   "offset": 32
                 }
               ],
               "location": "SOAPStepDefs.runRequest(String)"
             },
-            "matchedColumns": [
-              0
-            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 74609,
+              "duration": 374231,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I verify the location Erkelenz",
+            "line": 6,
+            "name": "I verify the location Willich",
             "match": {
-              "location": "SOAPStepDefs.verifyErkelenz()"
+              "location": "SOAPStepDefs.verifyWillich()"
             },
-            "matchedColumns": [
-              1
-            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 31975,
+              "duration": 356466,
               "status": "passed"
             },
-            "line": 6,
-            "name": "the bank name is Volksbank Erkelenz-Hückelhoven-Wegberg",
+            "line": 7,
+            "name": "the bank name is Volksbank Willich",
             "match": {
-              "location": "SOAPStepDefs.verifyVolksbankErkelenzHückelhovenWegberg()"
+              "location": "SOAPStepDefs.verifyVolksbankWillich()"
             },
-            "matchedColumns": [
-              2
-            ],
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SOAP"
           }
         ]
       },
       {
+        "start_timestamp": "2019-08-02T12:00:26.491Z",
         "before": [
           {
             "result": {
-              "duration": 30791,
+              "duration": 227381,
               "status": "passed"
             },
             "match": {
@@ -991,16 +1500,85 @@
         "line": 13,
         "name": "Find bank branches in Germany using BLZ codes",
         "description": "",
+        "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 199201246,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I run a SOAP request using code 31261282",
+            "match": {
+              "arguments": [
+                {
+                  "val": "31261282",
+                  "offset": 32
+                }
+              ],
+              "location": "SOAPStepDefs.runRequest(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 497000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I verify the location Erkelenz",
+            "match": {
+              "location": "SOAPStepDefs.verifyErkelenz()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 276725,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the bank name is Volksbank Erkelenz-Hückelhoven-Wegberg",
+            "match": {
+              "location": "SOAPStepDefs.verifyVolksbankErkelenzHückelhovenWegberg()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SOAP"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-02T12:00:26.696Z",
+        "before": [
+          {
+            "result": {
+              "duration": 65135,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SOAPStepDefs.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Find bank branches in Germany using BLZ codes",
+        "description": "",
         "id": "bank-branches-search-based-on-a-blz-codes;find-bank-branches-in-germany-using-blz-codes;;5",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 185819048,
+              "duration": 166575280,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "I run a SOAP request using code 34270094",
             "match": {
               "arguments": [
@@ -1011,40 +1589,36 @@
               ],
               "location": "SOAPStepDefs.runRequest(String)"
             },
-            "matchedColumns": [
-              0
-            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 56450,
+              "duration": 393968,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I verify the location Solingen",
             "match": {
               "location": "SOAPStepDefs.verifySolingen()"
             },
-            "matchedColumns": [
-              1
-            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 40660,
+              "duration": 364757,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "the bank name is Deutsche Bank",
             "match": {
               "location": "SOAPStepDefs.verifyDeutscheBank()"
             },
-            "matchedColumns": [
-              2
-            ],
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SOAP"
           }
         ]
       }
@@ -1053,23 +1627,23 @@
     "description": "",
     "id": "bank-branches-search-based-on-a-blz-codes",
     "keyword": "Feature",
-    "uri": "SOAPService.feature"
+    "uri": "file:src/test/resources/Features/SOAPService.feature",
+    "tags": [
+      {
+        "name": "@SOAP",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   },
   {
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 33159,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T12:00:26.864Z",
         "line": 5,
         "name": "Register new user in WordPress",
         "description": "",
@@ -1079,7 +1653,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3147796,
+              "duration": 5464242,
               "status": "passed"
             },
             "line": 6,
@@ -1091,7 +1665,7 @@
           },
           {
             "result": {
-              "duration": 7180362316,
+              "duration": 8164140412,
               "status": "passed"
             },
             "line": 7,
@@ -1103,7 +1677,7 @@
           },
           {
             "result": {
-              "duration": 9458980949,
+              "duration": 10409655861,
               "status": "passed"
             },
             "line": 8,
@@ -1116,17 +1690,7 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 284225,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T12:00:45.450Z",
         "line": 10,
         "name": "Login attempt with invalid credentials",
         "description": "",
@@ -1136,7 +1700,7 @@
         "steps": [
           {
             "result": {
-              "duration": 80926,
+              "duration": 397127,
               "status": "passed"
             },
             "line": 11,
@@ -1148,7 +1712,7 @@
           },
           {
             "result": {
-              "duration": 6252667673,
+              "duration": 7452113673,
               "status": "passed"
             },
             "line": 12,
@@ -1160,7 +1724,7 @@
           },
           {
             "result": {
-              "duration": 6271443916,
+              "duration": 7074507826,
               "status": "passed"
             },
             "line": 13,
@@ -1174,26 +1738,17 @@
       }
     ],
     "name": "User Registration",
-    "description": "\nI want to register new user in WordPress.",
+    "description": "  I want to register new user in WordPress.",
     "id": "user-registration",
     "keyword": "Feature",
-    "uri": "UserRegistration.feature"
+    "uri": "file:src/test/resources/Features/UserRegistration.feature",
+    "tags": []
   },
   {
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 44608,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T12:00:59.979Z",
         "line": 5,
         "name": "Create an entry in the DB",
         "description": "",
@@ -1203,7 +1758,7 @@
         "steps": [
           {
             "result": {
-              "duration": 482482835,
+              "duration": 492855865,
               "status": "passed"
             },
             "line": 6,
@@ -1215,7 +1770,7 @@
           },
           {
             "result": {
-              "duration": 542398333,
+              "duration": 643026578,
               "status": "passed"
             },
             "line": 7,
@@ -1227,7 +1782,7 @@
           },
           {
             "result": {
-              "duration": 97505,
+              "duration": 430681,
               "status": "passed"
             },
             "line": 8,
@@ -1245,7 +1800,7 @@
           },
           {
             "result": {
-              "duration": 43423,
+              "duration": 373441,
               "status": "passed"
             },
             "line": 9,
@@ -1258,17 +1813,7 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 27238,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T12:01:01.124Z",
         "line": 11,
         "name": "Retrieve information from the DB",
         "description": "",
@@ -1278,7 +1823,7 @@
         "steps": [
           {
             "result": {
-              "duration": 76978,
+              "duration": 918602,
               "status": "passed"
             },
             "line": 12,
@@ -1290,7 +1835,7 @@
           },
           {
             "result": {
-              "duration": 443457901,
+              "duration": 497582699,
               "status": "passed"
             },
             "line": 13,
@@ -1302,7 +1847,7 @@
           },
           {
             "result": {
-              "duration": 494237922,
+              "duration": 499777554,
               "status": "passed"
             },
             "line": 14,
@@ -1315,17 +1860,7 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 28817,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T12:01:02.126Z",
         "line": 16,
         "name": "Edit an entry in the DB",
         "description": "",
@@ -1335,7 +1870,7 @@
         "steps": [
           {
             "result": {
-              "duration": 467506132,
+              "duration": 490303754,
               "status": "passed"
             },
             "line": 17,
@@ -1347,7 +1882,7 @@
           },
           {
             "result": {
-              "duration": 68688,
+              "duration": 495422,
               "status": "passed"
             },
             "line": 18,
@@ -1360,17 +1895,7 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 30396,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SOAPStepDefs.setUp()"
-            }
-          }
-        ],
+        "start_timestamp": "2019-08-02T12:01:02.619Z",
         "line": 20,
         "name": "Delete an entry",
         "description": "",
@@ -1380,7 +1905,7 @@
         "steps": [
           {
             "result": {
-              "duration": 35133,
+              "duration": 272383,
               "status": "passed"
             },
             "line": 21,
@@ -1392,7 +1917,7 @@
           },
           {
             "result": {
-              "duration": 481910042,
+              "duration": 496420925,
               "status": "passed"
             },
             "line": 22,
@@ -1404,7 +1929,7 @@
           },
           {
             "result": {
-              "duration": 458501714,
+              "duration": 477832952,
               "status": "passed"
             },
             "line": 23,
@@ -1418,9 +1943,10 @@
       }
     ],
     "name": "Test REST API calls",
-    "description": "\r\nI want to execute API calls to create and retrieve information",
+    "description": "  I want to execute API calls to create and retrieve information",
     "id": "test-rest-api-calls",
     "keyword": "Feature",
-    "uri": "restAPI.feature"
+    "uri": "file:src/test/resources/Features/restAPI.feature",
+    "tags": []
   }
 ]

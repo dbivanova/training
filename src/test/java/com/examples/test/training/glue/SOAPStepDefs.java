@@ -10,8 +10,7 @@ import io.restassured.http.ContentType;
 import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
-import testData.SoapXML;
-
+import com.examples.test.training.testData.SoapXML;
 public class SOAPStepDefs {
 
 	private String BLZ;
@@ -23,7 +22,7 @@ public class SOAPStepDefs {
 	
 	SoapXML xmlBody = new SoapXML();
 	
-	@Before()
+	@Before("@SOAP")
 
 	public void setUp() {
     RestAssured.baseURI = "http://www.thomas-bayer.com";

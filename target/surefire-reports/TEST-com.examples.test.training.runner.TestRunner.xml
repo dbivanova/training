@@ -1,226 +1,97 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="88" failures="0" name="com.examples.test.training.runner.TestRunner" time="0.008" errors="0" skipped="0">
+<testsuite tests="28" failures="0" name="com.examples.test.training.runner.TestRunner" time="139.807" errors="0" skipped="0">
   <properties>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="JOB_NAME" value="Training Examples"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="NUMBER_OF_PROCESSORS" value="4"/>
-    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
-    <property name="JENKINS_HOME" value="C:\Program Files (x86)\Jenkins"/>
-    <property name="HUDSON_SERVER_COOKIE" value="ebc02f3302a47ca7"/>
-    <property name="POM_ARTIFACTID" value="training"/>
-    <property name="os.name" value="Windows 8.1"/>
-    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\resources.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\rt.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\jsse.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\jce.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\charsets.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\jfr.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\classes"/>
-    <property name="EXECUTOR_NUMBER" value="1"/>
-    <property name="user.country.format" value="BG"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="POM_DISPLAYNAME" value="training"/>
-    <property name="NODE_LABELS" value="master"/>
-    <property name="TEMP" value="C:\Windows\TEMP"/>
-    <property name="java.runtime.version" value="1.8.0_211-b12"/>
-    <property name="WINSW_SERVICE_ID" value="Jenkins"/>
-    <property name="user.name" value="TOSHIBA$"/>
-    <property name="user.language.format" value="bg"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
-    <property name="ProgramFiles" value="C:\Program Files (x86)"/>
-    <property name="user.language" value="en"/>
-    <property name="JOB_BASE_NAME" value="Training Examples"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/Training%20Examples/32/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#32"/>
-    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\bin"/>
-    <property name="LOCALAPPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Local"/>
-    <property name="java.version" value="1.8.0_211"/>
-    <property name="PROCESSOR_LEVEL" value="6"/>
-    <property name="user.timezone" value="Europe/Helsinki"/>
-    <property name="USERNAME" value="TOSHIBA$"/>
-    <property name="sun.arch.data.model" value="32"/>
-    <property name="NODE_NAME" value="master"/>
-    <property name="PROCESSOR_ARCHITEW6432" value="AMD64"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="32"/>
-    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
-    <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="maven.conf" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1\conf"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
-    <property name="user.country" value="GB"/>
-    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
-    <property name="java.home" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre"/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="os.version" value="6.3"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/Training%20Examples/32/display/redirect"/>
-    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
-    <property name="TMP" value="C:\Windows\TEMP"/>
-    <property name="path.separator" value=";"/>
-    <property name="java.vm.version" value="25.211-b12"/>
-    <property name="user.variant" value=""/>
-    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/job/Training%20Examples/display/redirect"/>
-    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="FP_NO_HOST_CHECK" value="NO"/>
-    <property name="JAVA_HOME" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="CommonProgramFiles" value="C:\Program Files (x86)\Common Files"/>
-    <property name="ComSpec" value="C:\Windows\system32\cmd.exe"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="POM_PACKAGING" value="jar"/>
-    <property name="user.script" value=""/>
-    <property name="SERVICE_ID" value="Jenkins"/>
-    <property name="COMPUTERNAME" value="TOSHIBA"/>
-    <property name="POM_GROUPID" value="com.examples.test"/>
-    <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
-    <property name="user.home" value="C:\Windows\system32\config\systemprofile"/>
-    <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="BUILD_TAG" value="jenkins-Training Examples-32"/>
-    <property name="JENKINS_SERVER_COOKIE" value="ebc02f3302a47ca7"/>
-    <property name="HUDSON_URL" value="http://localhost:8080/"/>
-    <property name="ProgramData" value="C:\ProgramData"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="USERPROFILE" value="C:\Windows\system32\config\systemprofile"/>
-    <property name="CLASSPATH" value=""/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="java.library.path" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1/bin;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK/bin;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Users\estafet_2\apache-maven-3.6.1\apache-maven-3.6.1\bin;C:\Users\estafet_2\workspace\geckodriver;C:\Users\estafet_2\workspace\chromedriver_win32;;."/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="APPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Roaming"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="maven.home" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1"/>
-    <property name="java.class.path" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1\boot\plexus-classworlds-2.6.0.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1 C:\Program Files (x86)\Jenkins\war\WEB-INF\lib\remoting-3.33.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 64039"/>
-    <property name="Path" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Users\estafet_2\apache-maven-3.6.1\apache-maven-3.6.1\bin;C:\Users\estafet_2\workspace\geckodriver;C:\Users\estafet_2\workspace\chromedriver_win32;"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PROCESSOR_ARCHITECTURE" value="x86"/>
-    <property name="PATH+JDK" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK/bin"/>
-    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 69 Stepping 1, GenuineIntel"/>
-    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
+    <property name="java.vm.version" value="25.211-b12"/>
+    <property name="user.country.format" value="BG"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\estafet_2\workspace\training"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="M2_HOME" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1"/>
-    <property name="java.io.tmpdir" value="C:\Windows\TEMP\"/>
-    <property name="OS" value="Windows_NT"/>
-    <property name="HUDSON_HOME" value="C:\Program Files (x86)\Jenkins"/>
-    <property name="PATH+MAVEN" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1/bin"/>
-    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/Training%20Examples/32/"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="os.arch" value="x86"/>
-    <property name="SystemRoot" value="C:\Windows"/>
-    <property name="java.ext.dirs" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\Users\estafet_2\workspace\training"/>
-    <property name="JOB_URL" value="http://localhost:8080/job/Training%20Examples/"/>
-    <property name="USERDOMAIN" value="WORKGROUP"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ESTAFE~1\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
-    <property name="MAVEN_HOME" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
-    <property name="BUILD_NUMBER" value="32"/>
-    <property name="BASE" value="C:\Program Files (x86)\Jenkins"/>
-    <property name="JENKINS_URL" value="http://localhost:8080/"/>
-    <property name="PROCESSOR_REVISION" value="4501"/>
-    <property name="ProgramW6432" value="C:\Program Files"/>
-    <property name="windir" value="C:\Windows"/>
-    <property name="file.encoding" value="Cp1251"/>
-    <property name="SystemDrive" value="C:"/>
-    <property name="maven3.interceptor" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar"/>
-    <property name="WORKSPACE" value="C:\Program Files (x86)\Jenkins\workspace\Training Examples"/>
-    <property name="VLC_PLUGIN_PATH" value="C:\Program Files (x86)\ArenaPLAY\node_modules\wcjs-prebuilt\bin"/>
-    <property name="maven3.interceptor.common" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar"/>
-    <property name="WINSW_EXECUTABLE" value="C:\Program Files (x86)\Jenkins\jenkins.exe"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\jbr\\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\jbr\\bin\server;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Users\estafet_2\apache-maven-3.6.1\apache-maven-3.6.1\bin;C:\Users\estafet_2\workspace\geckodriver;C:\Users\estafet_2\workspace\chromedriver_win32;C:\Program Files\PostgreSQL\11\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\estafet_2"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="estafet_2"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_211\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.2 test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="user.language.format" value="bg"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_211\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="idea.version2019.2" value="true"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: Choose a product from random category" name="Given I have an existing account with an online bookshop" time="0.002"/>
-  <testcase classname="Scenario: Choose a product from random category" name="When I log into the website" time="0"/>
-  <testcase classname="Scenario: Choose a product from random category" name="And I extend the Категории menu and choose book category" time="0"/>
-  <testcase classname="Scenario: Choose a product from random category" name="And I choose a book from the list" time="0"/>
-  <testcase classname="Scenario: Choose a product from random category" name="Then The book description will be loaded with price and an option to order" time="0"/>
-  <testcase classname="Scenario: Choose a product from random category" name="Scenario: Choose a product from random category" time="0.001"/>
-  <testcase classname="Scenario: Search for a product" name="Given I have an existing account with an online bookshop" time="0"/>
-  <testcase classname="Scenario: Search for a product" name="When I log into the website" time="0"/>
-  <testcase classname="Scenario: Search for a product" name="And I search for a specific book" time="0"/>
-  <testcase classname="Scenario: Search for a product" name="Then I will be able to select the book from the search results" time="0"/>
-  <testcase classname="Scenario: Search for a product" name="And The book description will be loaded with price and an option to order" time="0"/>
-  <testcase classname="Scenario: Search for a product" name="Scenario: Search for a product" time="0"/>
-  <testcase classname="Scenario: Add a book to the basket" name="Given I have an existing account with an online bookshop" time="0"/>
-  <testcase classname="Scenario: Add a book to the basket" name="When I log into the website" time="0"/>
-  <testcase classname="Scenario: Add a book to the basket" name="And I search and load a specific book" time="0"/>
-  <testcase classname="Scenario: Add a book to the basket" name="And I click on the Add to basket option" time="0"/>
-  <testcase classname="Scenario: Add a book to the basket" name="Then The book will be added to the basket" time="0"/>
-  <testcase classname="Scenario: Add a book to the basket" name="Scenario: Add a book to the basket" time="0"/>
-  <testcase classname="Scenario: Edit the basket" name="Given I have an existing account with an online bookshop" time="0"/>
-  <testcase classname="Scenario: Edit the basket" name="When I log into the website" time="0"/>
-  <testcase classname="Scenario: Edit the basket" name="And I add a book to the basket" time="0"/>
-  <testcase classname="Scenario: Edit the basket" name="And I load the added products" time="0"/>
-  <testcase classname="Scenario: Edit the basket" name="Then I will be able to increase the quantity" time="0"/>
-  <testcase classname="Scenario: Edit the basket" name="And I will be able to remove the products from the basket" time="0"/>
-  <testcase classname="Scenario: Edit the basket" name="Scenario: Edit the basket" time="0"/>
-  <testcase classname="Scenario: Get list of all authors" name="When I send GET request to the authors endpoint" time="0"/>
-  <testcase classname="Scenario: Get list of all authors" name="Then The response code will be 200" time="0"/>
-  <testcase classname="Scenario: Get list of all authors" name="And The service will return a list of existing entries" time="0"/>
-  <testcase classname="Scenario: Get list of all authors" name="Scenario: Get list of all authors" time="0.001"/>
-  <testcase classname="Scenario: Get author by authorID" name="When I send GET request using the author&apos;s ID" time="0"/>
-  <testcase classname="Scenario: Get author by authorID" name="Then The response code will be 200" time="0"/>
-  <testcase classname="Scenario: Get author by authorID" name="And The service will return the entry that corresponds to the authorID" time="0"/>
-  <testcase classname="Scenario: Get author by authorID" name="Scenario: Get author by authorID" time="0"/>
-  <testcase classname="Scenario: Get authorID by bookID" name="When I send GET request using a book&apos;s ID" time="0"/>
-  <testcase classname="Scenario: Get authorID by bookID" name="Then The response code will be 200" time="0"/>
-  <testcase classname="Scenario: Get authorID by bookID" name="And The service will return the entry that corresponds to the bookID" time="0"/>
-  <testcase classname="Scenario: Get authorID by bookID" name="Scenario: Get authorID by bookID" time="0"/>
-  <testcase classname="Scenario: Create an Author entry" name="When I send POST request to the authors endpoint" time="0"/>
-  <testcase classname="Scenario: Create an Author entry" name="Then The response code will be 200" time="0"/>
-  <testcase classname="Scenario: Create an Author entry" name="And The service will return new author ID" time="0"/>
-  <testcase classname="Scenario: Create an Author entry" name="Scenario: Create an Author entry" time="0"/>
-  <testcase classname="Scenario: Edit an Author entry" name="When I send PUT request to the authors endpoint changing the author&apos;s name" time="0.001"/>
-  <testcase classname="Scenario: Edit an Author entry" name="Then The response code will be 200" time="0"/>
-  <testcase classname="Scenario: Edit an Author entry" name="And The service will return the updated name in the details" time="0"/>
-  <testcase classname="Scenario: Edit an Author entry" name="Scenario: Edit an Author entry" time="0"/>
-  <testcase classname="Scenario: Delete an Author entry" name="When I send DELETE request" time="0"/>
-  <testcase classname="Scenario: Delete an Author entry" name="Then The response code will be 200" time="0"/>
-  <testcase classname="Scenario: Delete an Author entry" name="Scenario: Delete an Author entry" time="0"/>
-  <testcase classname="| 31460290 | Viersen | Volksbank Viersen |" name="Given I run a SOAP request using code 31460290" time="0"/>
-  <testcase classname="| 31460290 | Viersen | Volksbank Viersen |" name="Then I verify the location Viersen" time="0"/>
-  <testcase classname="| 31460290 | Viersen | Volksbank Viersen |" name="And the bank name is Volksbank Viersen" time="0"/>
-  <testcase classname="| 31460290 | Viersen | Volksbank Viersen |" name="| 31460290 | Viersen | Volksbank Viersen |" time="0"/>
-  <testcase classname="| 31061108 | Willich | Volksbank Willich |" name="Given I run a SOAP request using code 31061108" time="0"/>
-  <testcase classname="| 31061108 | Willich | Volksbank Willich |" name="Then I verify the location Willich" time="0"/>
-  <testcase classname="| 31061108 | Willich | Volksbank Willich |" name="And the bank name is Volksbank Willich" time="0"/>
-  <testcase classname="| 31061108 | Willich | Volksbank Willich |" name="| 31061108 | Willich | Volksbank Willich |" time="0"/>
-  <testcase classname="| 31261282 | Erkelenz | Volksbank Erkelenz-Hückelhoven-Wegberg |" name="Given I run a SOAP request using code 31261282" time="0"/>
-  <testcase classname="| 31261282 | Erkelenz | Volksbank Erkelenz-Hückelhoven-Wegberg |" name="Then I verify the location Erkelenz" time="0"/>
-  <testcase classname="| 31261282 | Erkelenz | Volksbank Erkelenz-Hückelhoven-Wegberg |" name="And the bank name is Volksbank Erkelenz-Hückelhoven-Wegberg" time="0"/>
-  <testcase classname="| 31261282 | Erkelenz | Volksbank Erkelenz-Hückelhoven-Wegberg |" name="| 31261282 | Erkelenz | Volksbank Erkelenz-Hückelhoven-Wegberg |" time="0"/>
-  <testcase classname="| 34270094 | Solingen | Deutsche Bank |" name="Given I run a SOAP request using code 34270094" time="0"/>
-  <testcase classname="| 34270094 | Solingen | Deutsche Bank |" name="Then I verify the location Solingen" time="0"/>
-  <testcase classname="| 34270094 | Solingen | Deutsche Bank |" name="And the bank name is Deutsche Bank" time="0"/>
-  <testcase classname="| 34270094 | Solingen | Deutsche Bank |" name="| 34270094 | Solingen | Deutsche Bank |" time="0"/>
-  <testcase classname="Scenario: Register new user in WordPress" name="Given I want to create new user profile" time="0"/>
-  <testcase classname="Scenario: Register new user in WordPress" name="When I fill out the form and click on the Create Account button" time="0"/>
-  <testcase classname="Scenario: Register new user in WordPress" name="Then My account is created and I&apos;m able to log into WordPress with that account" time="0"/>
-  <testcase classname="Scenario: Register new user in WordPress" name="Scenario: Register new user in WordPress" time="0.003"/>
-  <testcase classname="Scenario: Login attempt with invalid credentials" name="Given I want to validate error message from WordPress" time="0"/>
-  <testcase classname="Scenario: Login attempt with invalid credentials" name="When I enter invalid credentials and click on Login" time="0"/>
-  <testcase classname="Scenario: Login attempt with invalid credentials" name="Then I won&apos;t be logged in" time="0"/>
-  <testcase classname="Scenario: Login attempt with invalid credentials" name="Scenario: Login attempt with invalid credentials" time="0"/>
-  <testcase classname="Scenario: Create an entry in the DB" name="Given I want to create new employee entry in the DB" time="0"/>
-  <testcase classname="Scenario: Create an entry in the DB" name="When I send my json to the POST endpoint" time="0"/>
-  <testcase classname="Scenario: Create an entry in the DB" name="Then I will see response 200" time="0"/>
-  <testcase classname="Scenario: Create an entry in the DB" name="And The response body will contain new employee ID" time="0"/>
-  <testcase classname="Scenario: Create an entry in the DB" name="Scenario: Create an entry in the DB" time="0"/>
-  <testcase classname="Scenario: Retrieve information from the DB" name="Given An employee entry exists in the DB" time="0"/>
-  <testcase classname="Scenario: Retrieve information from the DB" name="When I perform GET API call using the employee ID" time="0"/>
-  <testcase classname="Scenario: Retrieve information from the DB" name="Then The API call will return the employee name" time="0"/>
-  <testcase classname="Scenario: Retrieve information from the DB" name="Scenario: Retrieve information from the DB" time="0"/>
-  <testcase classname="Scenario: Edit an entry in the DB" name="When I perform PUT API call using the employee ID" time="0"/>
-  <testcase classname="Scenario: Edit an entry in the DB" name="Then The API call will return the updated data" time="0"/>
-  <testcase classname="Scenario: Edit an entry in the DB" name="Scenario: Edit an entry in the DB" time="0"/>
-  <testcase classname="Scenario: Delete an entry" name="Given An employee entry exists in the DB" time="0"/>
-  <testcase classname="Scenario: Delete an entry" name="When I perform DELETE API call using the employee ID" time="0"/>
-  <testcase classname="Scenario: Delete an entry" name="Then the user will no longer exist" time="0"/>
-  <testcase classname="Scenario: Delete an entry" name="Scenario: Delete an entry" time="0"/>
+  <testcase classname="DB Connection test" name="Test for select operation" time="0.349"/>
+  <testcase classname="DB Connection test" name="Test for select operation" time="0.12"/>
+  <testcase classname="DB Connection test" name="Test for insert operation" time="0.271"/>
+  <testcase classname="DB Connection test" name="Test for insert operation" time="0.197"/>
+  <testcase classname="DB Connection test" name="Test for update operation" time="0.204"/>
+  <testcase classname="DB Connection test" name="Test for update operation" time="0.196"/>
+  <testcase classname="DB Connection test" name="Test for delete operation" time="0.168"/>
+  <testcase classname="DB Connection test" name="Test for delete operation" time="0.168"/>
+  <testcase classname="Online Bookshop" name="Choose a product from random category" time="32.043"/>
+  <testcase classname="Online Bookshop" name="Search for a product" time="19.829"/>
+  <testcase classname="Online Bookshop" name="Add a book to the basket" time="21.273"/>
+  <testcase classname="Online Bookshop" name="Edit the basket" time="24.167"/>
+  <testcase classname="Authors REST API" name="Get list of all authors" time="1.59"/>
+  <testcase classname="Authors REST API" name="Get author by authorID" time="0.15"/>
+  <testcase classname="Authors REST API" name="Get authorID by bookID" time="0.141"/>
+  <testcase classname="Authors REST API" name="Create an Author entry" time="0.59"/>
+  <testcase classname="Authors REST API" name="Edit an Author entry" time="0.113"/>
+  <testcase classname="Authors REST API" name="Delete an Author entry" time="0.125"/>
+  <testcase classname="Bank branches search based on a BLZ codes" name="Find bank branches in Germany using BLZ codes" time="0.846"/>
+  <testcase classname="Bank branches search based on a BLZ codes" name="Find bank branches in Germany using BLZ codes" time="0.187"/>
+  <testcase classname="Bank branches search based on a BLZ codes" name="Find bank branches in Germany using BLZ codes" time="0.189"/>
+  <testcase classname="Bank branches search based on a BLZ codes" name="Find bank branches in Germany using BLZ codes" time="0.168"/>
+  <testcase classname="User Registration" name="Register new user in WordPress" time="18.585"/>
+  <testcase classname="User Registration" name="Login attempt with invalid credentials" time="14.527"/>
+  <testcase classname="Test REST API calls" name="Create an entry in the DB" time="1.14"/>
+  <testcase classname="Test REST API calls" name="Retrieve information from the DB" time="1.001"/>
+  <testcase classname="Test REST API calls" name="Edit an entry in the DB" time="0.493"/>
+  <testcase classname="Test REST API calls" name="Delete an entry" time="0.977"/>
 </testsuite>

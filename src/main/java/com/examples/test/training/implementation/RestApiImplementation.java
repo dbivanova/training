@@ -1,21 +1,16 @@
 package com.examples.test.training.implementation;
 
-import static org.junit.Assert.*;
-import static org.junit.matchers.JUnitMatchers.*;
-
-import org.junit.Assert;
-
-import io.restassured.response.*;
-import junit.framework.Test;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import org.junit.Assert;
+import com.examples.test.training.testData.PostJSONRestApi;
+import com.examples.test.training.testData.PutJSONRestApi;
 
 import static io.restassured.RestAssured.given;
-
-import testData.PostJSONAuthors;
-import testData.PostJSONRestApi;
-import testData.PutJSONRestApi;
+import static org.junit.Assert.assertEquals;
+import static org.junit.matchers.JUnitMatchers.containsString;
 
 public class RestApiImplementation {
 

@@ -1,9 +1,10 @@
 package com.examples.test.training.glue;
 
-import java.util.List;
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
+import com.examples.test.training.constants.OnlineShopConstants;
+import com.examples.test.training.constants.ReadProperties;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,12 +14,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.examples.test.training.constants.OnlineShopConstants;
-
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 public class OnlineShopStepDef {
 
 public static String categoriesList; 
@@ -39,11 +37,12 @@ float totalPrice = 0.00f;
 
 	@When("^I log into the website$")
 	public void login() throws Throwable {
+		ReadProperties creds = new ReadProperties();
 		Actions action = new Actions(driver);
 		WebElement menu = driver.findElement(By.className("dropdown"));
 		action.moveToElement(menu).moveToElement(driver.findElement(By.xpath("//a[@href='/login/']"))).click().build().perform();
-		driver.findElement(By.name("email")).sendKeys(OnlineShopConstants.username);
-		driver.findElement(By.name("password")).sendKeys(OnlineShopConstants.password);
+		driver.findElement(By.name("email")).sendKeys(creds.getEshopUsername());
+		driver.findElement(By.name("password")).sendKeys(creds.getEshopPassword());
 		driver.findElement(By.cssSelector("a.bardbutton:nth-child(6)")).click();
 	}
 

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.examples.test.training.runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 88, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 130.393 sec
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 140.901 sec

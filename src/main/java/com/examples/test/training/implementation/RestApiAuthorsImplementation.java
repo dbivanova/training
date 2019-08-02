@@ -1,17 +1,15 @@
 package com.examples.test.training.implementation;
 
-import static io.restassured.RestAssured.given;
-
 import com.examples.test.training.constants.RestApiAuthorsConstants;
-
+import com.examples.test.training.testData.PostJSONAuthors;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.RandomUtils;
 import org.junit.Assert;
 
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
-import testData.PostJSONAuthors;
+import static io.restassured.RestAssured.given;
 
 public class RestApiAuthorsImplementation {
 
