@@ -13,7 +13,17 @@ public class SQLStatements {
     public static final String CLEAN_UP_DELETE = "DELETE FROM inventory WHERE inventory_id BETWEEN 9 and 10;";
     public static final String CLEAN_UP_UPDATE1 = "UPDATE film_actor SET film_id = 3 WHERE actor_id = 3;";
     public static final String CLEAN_UP_UPDATE2 = "UPDATE film_actor SET film_id = 1 WHERE actor_id = 1;";
-    public static final String CLEAN_UP_INSERT1 = "INSERT INTO film_category (category_id, film_id, last_updated) VALUES(6, 6,'2015-12-01 08:12:34-07');";
-    public static final String CLEAN_UP_INSERT2 = "INSERT INTO film_category (category_id, film_id, last_updated) VALUES(7, 7,'2015-02-01 16:12:34-07');";
+    public static final String CLEAN_UP_INSERT1 = "INSERT INTO film_category (category_id, film_id, last_updated) " +
+            "VALUES(6, 6,'2015-12-01 08:12:34-07');";
+    public static final String CLEAN_UP_INSERT2 = "INSERT INTO film_category (category_id, film_id, last_updated) " +
+            "VALUES(7, 7,'2015-02-01 16:12:34-07');";
+    public static final String INSERT2 = "INSERT INTO film (film_id, title, description, rental_duration, rental_rate) " +
+            "VALUES (?, ?, ?, ?, ?);";
+    public static final String SELECT2 = "SELECT * FROM film WHERE film_id = ?;";
+    public static final String UPDATE2 = "UPDATE film SET title = ? WHERE film_id = ?;";
+    public static final String VERIFY_UPDATE2 = "SELECT * FROM film WHERE film_id = 9;";
+    public static final String DELETE_UPDATED_FILM = "DELETE FROM film WHERE film_id = ?;";
+    public static final String VERIFY_DELETED_FILM = "SELECT * FROM film WHERE title = ?;";
+
 
 }
