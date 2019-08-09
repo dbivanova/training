@@ -287,7 +287,7 @@ public class OnlineShopStepDef {
         driver.findElement(By.className("shopcart-info-title")).click();
         WebElement quantity = driver.findElement(By.name("quantity[bvar2402]"));
         quantity.clear();
-        quantity.sendKeys("3");
+        quantity.sendKeys("5");
         driver.findElement(By.cssSelector("a.bardbutton:nth-child(2)")).click();
         float total = Float.parseFloat(driver.findElement(By.className("price")).getText().split(" ")[0]);
         float high = max;
