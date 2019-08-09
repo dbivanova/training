@@ -1,6 +1,6 @@
 Feature: Online Bookshop
   I want to create test scenarios about online bookshop operations
-
+  @UI
   Background:
     Given I have an existing account with an online bookshop
     When I log into the website
@@ -36,14 +36,4 @@ Feature: Online Bookshop
     And I click on Add to favourites
     Then The book will appear in the favourites list
 
-#  @UI
-#  Scenario Outline: Check discount
-#    And I add a book to the basket
-#    And I increase the quantity in the basket
-#    Then I will see percent discount <discount> according to the amount of the total <total>
-#    Examples:
-#      | discount | total |
-#      | 1        | 30    |
-#      | 5        | 70    |
-#      | 7        | 120   |
-#      | 10       | 125   |
+

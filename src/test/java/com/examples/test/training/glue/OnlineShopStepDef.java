@@ -14,6 +14,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -24,7 +25,7 @@ public class OnlineShopStepDef {
     public static WebDriver driver;
     public static int bookList;
 
-    @After("@UI")
+    @After("@UI, @Discount")
     public void screenshot(Scenario scenario) {
         scenario.write("Finished scenario");
         if (scenario.isFailed()) {
@@ -54,10 +55,9 @@ public class OnlineShopStepDef {
         driver.findElement(By.name("email")).sendKeys(creds.getEshopUsername());
         driver.findElement(By.name("password")).sendKeys(creds.getEshopPassword());
         driver.findElement(By.cssSelector("a.bardbutton:nth-child(6)")).click();
-//		Thread.sleep(5000);
-//		String loginSuccessful = driver.findElement(By.xpath("/html/body/div[2]/div[1]/div/div[2]/div[2]")).getText();
-//		System.out.println(loginSuccessful);
-//		Assert.assertEquals("Здравей, Пробен", loginSuccessful);
+		Thread.sleep(2000);
+		String loginSuccessful = driver.findElement(By.cssSelector(".name")).getText();
+		Assert.assertEquals("Здравей, Пробен", loginSuccessful);
 
     }
 
@@ -191,7 +191,6 @@ public class OnlineShopStepDef {
         Assert.assertTrue(removeFromFav.isDisplayed());
     }
 
-
     @Then("The book will appear in the favourites list")
     public void favList() throws InterruptedException {
         Actions action = new Actions(driver);
@@ -208,13 +207,42 @@ public class OnlineShopStepDef {
         driver.quit();
     }
 
-    @When("I increase the quantity in the basket")
-    public void i_increase_the_quantity_in_the_basket() {
+    @Given("I am logged into the online bookshop")
+    public void i_am_logged_into_the_online_bookshop() throws InterruptedException, IOException {
+        System.setProperty("webdriver.firefox.driver", "C:\\Users\\estafet_2\\workspace\\geckodriver\\geckodriver.exe");
+        driver = new FirefoxDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.get(OnlineShopConstants.URL);
+        Thread.sleep(5000);
+        driver.findElement(By.xpath("/html/body/div[2]/div/button")).click();
+        ReadProperties creds = new ReadProperties();
+        Actions action = new Actions(driver);
+        WebElement menu = driver.findElement(By.className("dropdown"));
+        action.moveToElement(menu).moveToElement(driver.findElement(By.xpath("//a[@href='/login/']"))).click().build().perform();
+        driver.findElement(By.name("email")).sendKeys(creds.getEshopUsername());
+        driver.findElement(By.name("password")).sendKeys(creds.getEshopPassword());
+        driver.findElement(By.cssSelector("a.bardbutton:nth-child(6)")).click();
+        Thread.sleep(2000);
+        String loginSuccessful = driver.findElement(By.cssSelector(".name")).getText();
+        Assert.assertEquals("Здравей, Пробен", loginSuccessful);
+    }
+
+    @When("I add a specific book to the basket")
+    public void i_add_a_specific_book_to_the_basket() {
+        driver.findElement(By.className("text")).sendKeys(OnlineShopConstants.discountBook);
+        driver.findElement(By.className("submit")).click();
+        driver.findElement(By.className("btn-order")).click();
 
     }
 
-    @Then("I will see percent discount {int} according to the amount of the total {int}")
+    @When("I change the quantity in the basket")
+    public void i_change_the_quantity_in_the_basket() {
+
+    }
+
+    @Then("I will see percent discount (.*?) according to the amount of the total (.*?)")
     public void i_will_see_percent_discount_according_to_the_amount_of_the_total(Integer int1, Integer int2) {
 
     }
-}
+  }

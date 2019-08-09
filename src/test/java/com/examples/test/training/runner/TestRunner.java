@@ -10,7 +10,9 @@ import cucumber.api.junit.Cucumber;
 	        glue = {"com.examples.test.training.glue"},
 	        features = {"src/test/resources/Features"},
 	        plugin = { "pretty", "html:target/cucumber-reports",
-	        "json:target/cucumber-reports/cucumber.json"})
+	        "json:target/cucumber-reports/cucumber.json"},
+	        tags = {"@UI, @Discount"}
+	        )
 	        
 	public class TestRunner {    
 
