@@ -244,46 +244,54 @@ public class OnlineShopStepDef {
         int actualDiscount = Integer.parseInt(driver.findElement(By.cssSelector(".discount-level-inner > div:nth-child(1) > strong:nth-child(2)")).getText().split("%")[0]);
         Assert.assertEquals(actualDiscount, discount);
     }
-//
-//    @Then("I will see discount of (.*?)%")
-//        public void firstLevelDiscount(int discount) {
-//        String discountValue = driver.findElement(By.cssSelector(".discount-level-inner > div:nth-child(1) > strong:nth-child(2)")).getText();
-//        Assert.assertEquals(discount + "%", discountValue);
-//        driver.quit();
-//}
-//
-//@When("I add a books with total value between (.*?) and (.*?) to the basket")
-//public void i_add_a_books_with_total_value_between_and_to_the_basket(int lowerValue, int higherValue) {
-//    driver.findElement(By.className("text")).sendKeys(OnlineShopConstants.discountBook);
-//    driver.findElement(By.className("submit")).click();
-//    driver.findElement(By.className("btn-order")).click();
-//    driver.findElement(By.className("shopcart-info-title")).click();
-//    WebElement quantity = driver.findElement(By.name("quantity[bvar2402]"));
-//    quantity.clear();
-//    quantity.sendKeys("2");
-//    driver.findElement(By.cssSelector("a.bardbutton:nth-child(2)")).click();
-//    float total = Float.parseFloat(driver.findElement(By.className("price")).getText().split(" ")[0]);
-//    float low = lowerValue;
-//    float high = higherValue;
-//    Assert.assertTrue(low <= total && total <= high);
-//   //System.out.println(total);
-//}
 
-    @When("I add two books with total value between {int} and {int} to the basket")
-    public void i_add_two_books_with_total_value_between_and_to_the_basket(Integer int1, Integer int2) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+    @When("I add two books with total value between (.*?) and (.*?) to the basket")
+    public void addTwoBooks(int min, int max) {
+        driver.findElement(By.className("text")).sendKeys(OnlineShopConstants.discountBook);
+        driver.findElement(By.className("submit")).click();
+        driver.findElement(By.className("btn-order")).click();
+        driver.findElement(By.className("shopcart-info-title")).click();
+        WebElement quantity = driver.findElement(By.name("quantity[bvar2402]"));
+        quantity.clear();
+        quantity.sendKeys("2");
+        driver.findElement(By.cssSelector("a.bardbutton:nth-child(2)")).click();
+        float total = Float.parseFloat(driver.findElement(By.className("price")).getText().split(" ")[0]);
+        float low = min;
+        float high = max;
+        Assert.assertTrue(low <= total && total <= high);
+        System.out.println(total);
     }
 
     @When("I add three books with total value between {int} and {int} to the basket")
-    public void i_add_three_books_with_total_value_between_and_to_the_basket(Integer int1, Integer int2) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+    public void addThreeBooks(int min, int max) {
+        driver.findElement(By.className("text")).sendKeys(OnlineShopConstants.discountBook);
+        driver.findElement(By.className("submit")).click();
+        driver.findElement(By.className("btn-order")).click();
+        driver.findElement(By.className("shopcart-info-title")).click();
+        WebElement quantity = driver.findElement(By.name("quantity[bvar2402]"));
+        quantity.clear();
+        quantity.sendKeys("3");
+        driver.findElement(By.cssSelector("a.bardbutton:nth-child(2)")).click();
+        float total = Float.parseFloat(driver.findElement(By.className("price")).getText().split(" ")[0]);
+        float low = min;
+        float high = max;
+        Assert.assertTrue(low <= total && total <= high);
+        System.out.println(total);
     }
 
     @When("I add five books with total value above {int} to the basket")
-    public void i_add_five_books_with_total_value_above_to_the_basket(Integer int1) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+    public void addFiveBooks(int max) {
+        driver.findElement(By.className("text")).sendKeys(OnlineShopConstants.discountBook);
+        driver.findElement(By.className("submit")).click();
+        driver.findElement(By.className("btn-order")).click();
+        driver.findElement(By.className("shopcart-info-title")).click();
+        WebElement quantity = driver.findElement(By.name("quantity[bvar2402]"));
+        quantity.clear();
+        quantity.sendKeys("3");
+        driver.findElement(By.cssSelector("a.bardbutton:nth-child(2)")).click();
+        float total = Float.parseFloat(driver.findElement(By.className("price")).getText().split(" ")[0]);
+        float high = max;
+        Assert.assertTrue(high <= total);
+        System.out.println(total);
     }
   }
