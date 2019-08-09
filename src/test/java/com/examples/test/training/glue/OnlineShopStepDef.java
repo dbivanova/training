@@ -202,13 +202,12 @@ public class OnlineShopStepDef {
         driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div[2]/div/div[1]/table/tbody/tr/td[2]/div[1]/a")).click();
         Thread.sleep(2000);
         String text = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div[2]/div/p/em")).getText();
-        //System.out.println(text);
         Assert.assertEquals("Вашият списък с желани книги е празен!", text);
         driver.quit();
     }
 
     @Given("I am logged into the online bookshop")
-    public void i_am_logged_into_the_online_bookshop() throws InterruptedException, IOException {
+    public void logIn() throws InterruptedException, IOException {
         System.setProperty("webdriver.firefox.driver", "C:\\Users\\estafet_2\\workspace\\geckodriver\\geckodriver.exe");
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
@@ -226,23 +225,65 @@ public class OnlineShopStepDef {
         Thread.sleep(2000);
         String loginSuccessful = driver.findElement(By.cssSelector(".name")).getText();
         Assert.assertEquals("Здравей, Пробен", loginSuccessful);
-    }
+   }
 
-    @When("I add a specific book to the basket")
-    public void i_add_a_specific_book_to_the_basket() {
+    @When("I add a book with total value between (.*?) and (.*?) to the basket")
+    public void addOneBook(int min, int max) {
         driver.findElement(By.className("text")).sendKeys(OnlineShopConstants.discountBook);
         driver.findElement(By.className("submit")).click();
         driver.findElement(By.className("btn-order")).click();
-
+        driver.findElement(By.className("shopcart-info-title")).click();
+        float total = Float.parseFloat(driver.findElement(By.className("price")).getText().split(" ")[0]);
+        float low = min;
+        float high = max;
+        Assert.assertTrue(low <= total && total <= high);
     }
 
-    @When("I change the quantity in the basket")
-    public void i_change_the_quantity_in_the_basket() {
+    @Then("I will see discount of (.*?)%")
+    public void discount(int discount) {
+        int actualDiscount = Integer.parseInt(driver.findElement(By.cssSelector(".discount-level-inner > div:nth-child(1) > strong:nth-child(2)")).getText().split("%")[0]);
+        Assert.assertEquals(actualDiscount, discount);
+    }
+//
+//    @Then("I will see discount of (.*?)%")
+//        public void firstLevelDiscount(int discount) {
+//        String discountValue = driver.findElement(By.cssSelector(".discount-level-inner > div:nth-child(1) > strong:nth-child(2)")).getText();
+//        Assert.assertEquals(discount + "%", discountValue);
+//        driver.quit();
+//}
+//
+//@When("I add a books with total value between (.*?) and (.*?) to the basket")
+//public void i_add_a_books_with_total_value_between_and_to_the_basket(int lowerValue, int higherValue) {
+//    driver.findElement(By.className("text")).sendKeys(OnlineShopConstants.discountBook);
+//    driver.findElement(By.className("submit")).click();
+//    driver.findElement(By.className("btn-order")).click();
+//    driver.findElement(By.className("shopcart-info-title")).click();
+//    WebElement quantity = driver.findElement(By.name("quantity[bvar2402]"));
+//    quantity.clear();
+//    quantity.sendKeys("2");
+//    driver.findElement(By.cssSelector("a.bardbutton:nth-child(2)")).click();
+//    float total = Float.parseFloat(driver.findElement(By.className("price")).getText().split(" ")[0]);
+//    float low = lowerValue;
+//    float high = higherValue;
+//    Assert.assertTrue(low <= total && total <= high);
+//   //System.out.println(total);
+//}
 
+    @When("I add two books with total value between {int} and {int} to the basket")
+    public void i_add_two_books_with_total_value_between_and_to_the_basket(Integer int1, Integer int2) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
     }
 
-    @Then("I will see percent discount (.*?) according to the amount of the total (.*?)")
-    public void i_will_see_percent_discount_according_to_the_amount_of_the_total(Integer int1, Integer int2) {
+    @When("I add three books with total value between {int} and {int} to the basket")
+    public void i_add_three_books_with_total_value_between_and_to_the_basket(Integer int1, Integer int2) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
+    }
 
+    @When("I add five books with total value above {int} to the basket")
+    public void i_add_five_books_with_total_value_above_to_the_basket(Integer int1) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
     }
   }
