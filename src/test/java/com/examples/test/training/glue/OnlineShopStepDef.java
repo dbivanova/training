@@ -243,6 +243,7 @@ public class OnlineShopStepDef {
     public void discount(int discount) {
         int actualDiscount = Integer.parseInt(driver.findElement(By.cssSelector(".discount-level-inner > div:nth-child(1) > strong:nth-child(2)")).getText().split("%")[0]);
         Assert.assertEquals(actualDiscount, discount);
+        driver.quit();
     }
 
     @When("I add two books with total value between (.*?) and (.*?) to the basket")
@@ -262,7 +263,7 @@ public class OnlineShopStepDef {
         System.out.println(total);
     }
 
-    @When("I add three books with total value between {int} and {int} to the basket")
+    @When("I add three books with total value between (.*?) and (.*?) to the basket")
     public void addThreeBooks(int min, int max) {
         driver.findElement(By.className("text")).sendKeys(OnlineShopConstants.discountBook);
         driver.findElement(By.className("submit")).click();
@@ -279,7 +280,7 @@ public class OnlineShopStepDef {
         System.out.println(total);
     }
 
-    @When("I add five books with total value above {int} to the basket")
+    @When("I add five books with total value above (.*?) to the basket")
     public void addFiveBooks(int max) {
         driver.findElement(By.className("text")).sendKeys(OnlineShopConstants.discountBook);
         driver.findElement(By.className("submit")).click();
