@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.examples.test.training.runner.TestRunner" time="0.005" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="com.examples.test.training.runner.TestRunner" time="0.008" errors="1" skipped="0">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="JOB_NAME" value="Training Examples"/>
@@ -11,7 +11,7 @@
     <property name="POM_ARTIFACTID" value="training"/>
     <property name="os.name" value="Windows 8.1"/>
     <property name="sun.boot.class.path" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\resources.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\rt.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\jsse.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\jce.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\charsets.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\jfr.jar;C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\classes"/>
-    <property name="EXECUTOR_NUMBER" value="1"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
     <property name="user.country.format" value="BG"/>
     <property name="sun.desktop" value="windows"/>
     <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
@@ -28,8 +28,8 @@
     <property name="ProgramFiles" value="C:\Program Files (x86)"/>
     <property name="user.language" value="en"/>
     <property name="JOB_BASE_NAME" value="Training Examples"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/Training%20Examples/52/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#52"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/Training%20Examples/75/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#75"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\bin"/>
     <property name="LOCALAPPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Local"/>
     <property name="java.version" value="1.8.0_211"/>
@@ -40,7 +40,7 @@
     <property name="NODE_NAME" value="master"/>
     <property name="PROCESSOR_ARCHITEW6432" value="AMD64"/>
     <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="52"/>
+    <property name="BUILD_ID" value="75"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -54,7 +54,7 @@
     <property name="java.home" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK\jre"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="os.version" value="6.3"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/Training%20Examples/52/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/Training%20Examples/75/display/redirect"/>
     <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="TMP" value="C:\Windows\TEMP"/>
     <property name="path.separator" value=";"/>
@@ -77,7 +77,7 @@
     <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
     <property name="user.home" value="C:\Windows\system32\config\systemprofile"/>
     <property name="PUBLIC" value="C:\Users\Public"/>
-    <property name="BUILD_TAG" value="jenkins-Training Examples-52"/>
+    <property name="BUILD_TAG" value="jenkins-Training Examples-75"/>
     <property name="JENKINS_SERVER_COOKIE" value="ebc02f3302a47ca7"/>
     <property name="HUDSON_URL" value="http://localhost:8080/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -91,7 +91,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1"/>
     <property name="java.class.path" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1\boot\plexus-classworlds-2.6.0.jar;C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1 C:\Program Files (x86)\Jenkins\war\WEB-INF\lib\remoting-3.33.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 60423"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1 C:\Program Files (x86)\Jenkins\war\WEB-INF\lib\remoting-3.33.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 55110"/>
     <property name="OPENSSL_CONF" value="C:\Program Files\PostgreSQL\psqlODBC\etc\openssl.cnf"/>
     <property name="Path" value="C:\Program Files (x86)\Jenkins\tools\hudson.model.JDK/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Users\estafet_2\apache-maven-3.6.1\apache-maven-3.6.1\bin;C:\Users\estafet_2\workspace\geckodriver;C:\Users\estafet_2\workspace\chromedriver_win32;C:\Program Files\PostgreSQL\11\bin;"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
@@ -107,7 +107,7 @@
     <property name="HUDSON_HOME" value="C:\Program Files (x86)\Jenkins"/>
     <property name="PATH+MAVEN" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1/bin"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://localhost:8080/job/Training%20Examples/52/"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/Training%20Examples/75/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="x86"/>
@@ -120,7 +120,7 @@
 "/>
     <property name="MAVEN_HOME" value="C:\Program Files (x86)\Jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven_3.6.1"/>
     <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
-    <property name="BUILD_NUMBER" value="52"/>
+    <property name="BUILD_NUMBER" value="75"/>
     <property name="BASE" value="C:\Program Files (x86)\Jenkins"/>
     <property name="JENKINS_URL" value="http://localhost:8080/"/>
     <property name="PROCESSOR_REVISION" value="4501"/>
@@ -136,7 +136,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"/>
   </properties>
-  <testcase classname="com.examples.test.training.runner.TestRunner" name="initializationError" time="0.005">
+  <testcase classname="com.examples.test.training.runner.TestRunner" name="initializationError" time="0.008">
     <error message="Failed to parse resource at: file:src/test/resources/Features/OnlineShop.feature" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: Failed to parse resource at: file:src/test/resources/Features/OnlineShop.feature
 	at cucumber.runtime.model.FeatureParser.parseResource(FeatureParser.java:40)
 	at cucumber.runtime.model.FeatureBuilder.parse(FeatureBuilder.java:25)

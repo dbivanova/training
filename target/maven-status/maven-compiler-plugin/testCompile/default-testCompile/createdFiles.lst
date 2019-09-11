@@ -1,7 +1,1 @@
-com\examples\test\training\glue\SOAPStepDefs.class
-com\examples\test\training\glue\UserRegStepDefs.class
-com\examples\test\training\glue\RestApiStepsDef.class
-com\examples\test\training\glue\DBConnectionStepDef.class
-com\examples\test\training\glue\RestApiAuthorsStepDef.class
-com\examples\test\training\glue\OnlineShopStepDef.class
-com\examples\test\training\runner\TestRunner.class
+com\examples\test\training\glue\LocalRESTStesDef.class

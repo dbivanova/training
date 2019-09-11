@@ -1,6 +1,7 @@
 C:\Users\estafet_2\workspace\training\src\test\java\com\examples\test\training\glue\RestApiStepsDef.java
 C:\Users\estafet_2\workspace\training\src\test\java\com\examples\test\training\runner\TestRunner.java
 C:\Users\estafet_2\workspace\training\src\test\java\com\examples\test\training\glue\SOAPStepDefs.java
+C:\Users\estafet_2\workspace\training\src\test\java\com\examples\test\training\glue\LocalRESTStesDef.java
 C:\Users\estafet_2\workspace\training\src\test\java\com\examples\test\training\glue\DBConnectionStepDef.java
 C:\Users\estafet_2\workspace\training\src\test\java\com\examples\test\training\glue\RestApiAuthorsStepDef.java
 C:\Users\estafet_2\workspace\training\src\test\java\com\examples\test\training\glue\UserRegStepDefs.java
