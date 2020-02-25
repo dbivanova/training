@@ -37,7 +37,7 @@ public class OnlineShopStepDef {
     @Given("^I have an existing account with an online bookshop$")
     public void setUp() throws Throwable {
 
-        System.setProperty("webdriver.firefox.driver", "C:\\Users\\estafet_2\\workspace\\geckodriver\\geckodriver.exe");
+        System.setProperty("webdriver.firefox.driver", "C:\\Users\\desis\\geckodriver-v0.26.0-win64\\geckodriver.exe");
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
